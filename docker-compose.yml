@@ -1,0 +1,106 @@
+version: "3.5"
+services:
+  mongo:
+    image: mongo:${MONGO_VERSION}
+    container_name: mongo-1
+    command: --nojournal
+    restart: always
+    ports:
+      - "${MONGO_PORT}:27017"
+    networks:
+      - fiware
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+    healthcheck:
+      test: |
+        host=`hostname --ip-address || echo '127.0.0.1'`; 
+        mongo --quiet $host/test --eval 'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)' && echo 0 || echo 1
+    volumes: 
+      - mongo-db-data:/data/db 
+
+  orion:
+    image: fiware/orion:${ORION_VERSION}
+    container_name: orion
+    command: -dbhost mongo -dbuser root -dbpwd example #-logLevel DEBUG
+    restart: always
+    depends_on:
+      - mongo
+    ports:
+      - "${ORION_PORT}:1026"
+    links:
+      - mongo
+    networks:
+      - fiware
+    healthcheck:
+      test: curl --fail -s http://orion:1026/version || exit 1
+
+  script-draco:
+    image: ging/python-flask
+    container_name: script-draco
+    environment:
+      - DRACO_ENDPOINT=draco:9090
+      - "CHROMA_REMOTE_URL=${CHROMA_REMOTE_URL}"
+      - "CHROMA_REMOTE_USERNAME=${CHROMA_REMOTE_USERNAME}"
+      - "CHROMA_REMOTE_PASSWORD=${CHROMA_REMOTE_PASSWORD}"
+      - "CHROMA_TOKEN=${CHROMA_TOKEN}"
+      - "FIREHOSE_HOSTNAME=${FIREHOSE_HOSTNAME}"
+      - "FIREHOSE_PORT=${FIREHOSE_PORT}"
+      - "FIREHOSE_CREDENTIALS=${FIREHOSE_CREDENTIALS}"
+    depends_on: 
+      - draco
+    healthcheck:
+     test: ["CMD", "curl", "-f", "http://draco:9090/nifi-api/system-diagnostics"]
+     interval: 1m30s
+     timeout: 10s
+     retries: 3
+     start_period: 120s
+    command: bash -c "/resources/wait_for_draco.sh && python3 /resources/runDraco.py"
+    volumes:
+       - ./draco:/resources
+    networks:
+      - fiware
+
+  draco:
+    #image: ging/fiware-draco:${DRACO_VERSION}
+    build:
+      context: ./draco
+      args:
+        DRACO_VERSION: ${DRACO_VERSION}
+    container_name: draco-1
+    restart: always
+    depends_on:
+      - orion
+    ports:
+      - "${DRACO_WEB_PORT}:9090"
+      - "${DRACO_PORT}:5050"
+    networks:
+      - fiware
+    environment:
+      - NIFI_WEB_HTTP_PORT=${DRACO_WEB_PORT}
+    healthcheck:
+      test: curl --fail -s http://draco:9090/nifi-api/system-diagnostics || exit 1
+      start_period: 1m
+  
+  web:
+    build:
+      context: ./web
+    container_name: web-1
+    restart: always
+    depends_on:
+      - orion
+    ports:
+      - "${WEB_CLIENT_PORT}:3000"
+    networks:
+      - fiware
+    healthcheck:
+      test: curl --fail -s http://web:3000/status || exit 1
+
+volumes: 
+  mongo-db-data:
+
+networks:
+  fiware:
+    ipam:
+      config:
+        - subnet: 172.18.1.0/24

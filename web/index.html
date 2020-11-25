@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebSocket example</title>
+  </head>
+  <body>
+    <h1>Aircrafts</h1>
+    <p>id|flight|coordinates|speed|posUpdateTime|flight_number</p>
+    <ul id="aircraft">
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+          var socket = io();
+          socket.on('aircraft-change', function(aircrafts){
+              aircrafts.forEach(aircraft => {
+                const text = aircraft.id + '|' + aircraft.flight + '|' + aircraft.location.coordinates + '|' + aircraft.speed + '|' + aircraft.posUpdateTime + '|' + aircraft.flight_number
+                $('#aircraft').append($('<li>').text(text));
+              });
+          });
+        });
+    </script>
+  </body>
+</html>
