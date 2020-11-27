@@ -123,7 +123,7 @@ if __name__ == "__main__":
 
 
     print("Initializing Orion Connection to MongoDB ... ")
-    template_info=init.get_template_info(draco_endpoint,'ORION-TO-MONGO')
+    template_info=init.get_template_info(draco_endpoint,'ORION-TO-MONGO-2')
     group_id=template_info[0]
     init.put_template(draco_endpoint,group_id,template_info[1],2500.0,900.0)
     processors_id=init.get_processors_id(draco_endpoint,group_id)
