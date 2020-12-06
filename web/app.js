@@ -25,8 +25,8 @@ app.get('/', (req, res) => {
 })
 
 app.post("/subscription/:type", (req, res) => {
-    //console.log("Subscription event ", req.params.type);
-    //console.log(req.body.data)
+    console.log("Subscription event ", req.params.type);
+    console.log(req.body.data)
     ws.emit(req.params.type, req.body.data);
     res.status(204).send();
 });
