@@ -21,7 +21,7 @@ fi
 
 function create_subscriptions {
 
-        echo 'Subscribe to changes in airport'
+    echo 'Subscribe to changes in airport'
 
     curl -iX POST \
     --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
@@ -41,7 +41,7 @@ function create_subscriptions {
     }
     }'
 
-        echo 'Subscribe to changes in airline'
+    echo 'Subscribe to changes in airline'
 
     curl -iX POST \
     --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
@@ -100,11 +100,13 @@ function create_subscriptions {
     }
     }'
 
+    echo 'Subscribe to changes in flight'
+
     curl -iX POST \
     --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
     --header 'content-type: application/json' \
     --data '{
-    "description": "Notify me of all Flight changes",
+    "description": "Notify me of all Notification changes",
     "subject": {
         "entities": [{"idPattern": ".*", "type": "Flight"}],
         "condition": {
@@ -117,6 +119,48 @@ function create_subscriptions {
         }
     }
     }'
+
+    echo 'Subscribe to changes in noification of flight'
+
+    curl -iX POST \
+    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
+    --header 'content-type: application/json' \
+    --data '{
+    "description": "Notify me of all Notification changes",
+    "subject": {
+        "entities": [{"idPattern": ".*", "type": "Notification"}],
+        "condition": {
+        "attrs": [ "date", "message", "status"]
+        }
+    },
+    "notification": {
+        "http": {
+        "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
+        }
+    }
+    }'
+
+        echo 'Subscribe to changes in notification of flight'
+
+    curl -iX POST \
+    --url 'http://localhost:1026/v2/subscriptions' \
+    --header 'content-type: application/json' \
+    --data '{
+    "description": "Notify me of all Notification changes",
+    "subject": {
+        "entities": [{"idPattern": ".*", "type": "Notification"}],
+        "condition": {
+        "attrs": [ "date", "message", "status"]
+        }
+    },
+    "notification": {
+        "http": {
+        "url": "http://172.17.0.1:3000/subscription/notification-change"
+        }
+    }
+    }'
+
+
 }
 
 
