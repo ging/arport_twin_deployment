@@ -54,7 +54,7 @@ async function createNotification(flightId, message, date = new Date()){
                     "value": message
                 },
                 "belongsToFlight": {
-                    "value": flightId,
+                    "value": flightId.toString(),
                     "type": "Relationship"
                 },
                 "status" : {

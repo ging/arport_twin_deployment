@@ -18,7 +18,7 @@ async function readFlight(entityId, params = {}){
 async function readFlightByDate(entityId, startDate = new Date(), endDate = new Date()){
     try {
         return await readFlight(entityId, {
-            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString}`
+            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()}`
         })
     } catch(error) {
         throw(error);

@@ -1,0 +1,5007 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>42ab3ede-0176-1000-c153-2619333b0b02</groupId>
+    <name>Assaia-NGSI-Orion-Sample</name>
+    <snippet>
+        <connections>
+            <id>33a9dada-b9df-3234-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>3f438795-0fb7-383f-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>d09ef172-85fc-3f52-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>37c04f6e-1c8d-3429-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>100000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>ad244e96-66de-3414-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>36f204e2-8a3f-3a7f-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4aeeeaca-9787-3673-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>100000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>4668e0df-336e-3382-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>split</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>c35d7b8a-71b1-3773-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4b7fa511-f098-3349-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>100000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>36f204e2-8a3f-3a7f-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>437e7289-124a-357d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>50010d82-f28d-35d9-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>437e7289-124a-357d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>split</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>8f6ebbc1-8c4c-3960-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>5642339d-e364-38e6-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>c7fb0a05-2eb4-387e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>4668e0df-336e-3382-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>6bd4b297-38bb-3891-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>8f6ebbc1-8c4c-3960-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>c7fb0a05-2eb4-387e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>76120a95-1652-32be-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>c35d7b8a-71b1-3773-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>3f438795-0fb7-383f-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>974cc91f-b90a-3070-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>100000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>8e7ee66b-3604-3483-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>No Retry</selectedRelationships>
+            <selectedRelationships>Retry</selectedRelationships>
+            <source>
+                <groupId>7253be06-e866-3b6c-0000-000000000000</groupId>
+                <id>ad244e96-66de-3414-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <processors>
+            <id>36f204e2-8a3f-3a7f-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>634.5285034179688</x>
+                <y>404.8086690950513</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Regular Expression</key>
+                        <value>
+                            <name>Regular Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Value</key>
+                        <value>
+                            <name>Replacement Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Character Set</key>
+                        <value>
+                            <name>Character Set</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Buffer Size</key>
+                        <value>
+                            <name>Maximum Buffer Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Strategy</key>
+                        <value>
+                            <name>Replacement Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Evaluation Mode</key>
+                        <value>
+                            <name>Evaluation Mode</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Regular Expression</key>
+                        <value>[(*)]</value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Value</key>
+                        <value>-</value>
+                    </entry>
+                    <entry>
+                        <key>Character Set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Buffer Size</key>
+                        <value>1 MB</value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Strategy</key>
+                        <value>Regex Replace</value>
+                    </entry>
+                    <entry>
+                        <key>Evaluation Mode</key>
+                        <value>Line-by-Line</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ReplaceText</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.ReplaceText</type>
+        </processors>
+        <processors>
+            <id>3f438795-0fb7-383f-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>645.1565249873638</x>
+                <y>1.3032568054204603</y>
+            </position>
+            <bundle>
+                <artifact>nifi-update-attribute-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                        <value>
+                            <name>Delete Attributes Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>
+                            <name>Store State</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                        <value>
+                            <name>Stateful Variables Initial Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>
+                            <name>canonical-value-lookup-cache-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>entityId</key>
+                        <value>
+                            <name>entityId</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>entityType</key>
+                        <value>
+                            <name>entityType</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>Do not store state</value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>entityId</key>
+                        <value>${invokehttp.request.url
+:substringAfterLast('/')}</value>
+                    </entry>
+                    <entry>
+                        <key>entityType</key>
+                        <value>${invokehttp.request.url
+:substringBeforeLast('/'):substringAfterLast('/')}</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>UpdateAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
+            <id>437e7289-124a-357d-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>392.5103292513013</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>jolt-transform</key>
+                        <value>
+                            <name>jolt-transform</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-class</key>
+                        <value>
+                            <name>jolt-custom-class</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-modules</key>
+                        <value>
+                            <name>jolt-custom-modules</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>jolt-spec</key>
+                        <value>
+                            <name>jolt-spec</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Transform Cache Size</key>
+                        <value>
+                            <name>Transform Cache Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>pretty_print</key>
+                        <value>
+                            <name>pretty_print</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>jolt-transform</key>
+                        <value>jolt-transform-chain</value>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-class</key>
+                    </entry>
+                    <entry>
+                        <key>jolt-custom-modules</key>
+                    </entry>
+                    <entry>
+                        <key>jolt-spec</key>
+                        <value>[
+  {
+    "operation": "default",
+    "spec": {
+      "Timestamp": "1970-01-01T00:00:00Z",
+      "AODBPrincipalFlightID": "${AODBPrincipalFlightID}"
+    }
+	},
+  {
+    "operation": "shift",
+    "spec": {
+      "@Id": "entities[0].id",
+      "#TurnAroundEvent": "entities[0].type",
+      "#append": "actionType",
+      "EventType": {
+        "@": "entities[0].eventType.value",
+        "#Text": "entities[0].eventType.type"
+      },
+      "ObjectName": {
+        "@": "entities[0].objectName.value",
+        "#Text": "entities[0].objectName.type"
+      },
+      "ObjectType": {
+        "@": "entities[0].objectType.value",
+        "#Text": "entities[0].objectType.type"
+      },
+      "Position": {
+        "@": "entities[0].position.value",
+        "#Text": "entities[0].position.type"
+      },
+      "StandCode": {
+        "@": "entities[0].standCode.value",
+        "#Text": "entities[0].standCode.type"
+      },
+      "Timestamp": {
+        "@": "entities[0].timeStamp.value",
+        "#DateTime": "entities[0].timeStamp.type"
+      },
+      "AODBPrincipalFlightID": {
+        "@": "entities[0].belongsToFlight.value",
+        "#Relationship": "entities[0].belongsToFlight.type"
+      }
+    }
+   },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "entities": {
+        "*": {
+          "id": "=toString"
+        }
+      }
+    }
+   }
+]
+</value>
+                    </entry>
+                    <entry>
+                        <key>Transform Cache Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>pretty_print</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>JoltTransformJSON</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
+        </processors>
+        <processors>
+            <id>4668e0df-336e-3382-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>7.126785148304407</x>
+                <y>195.4939600362468</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Destination</key>
+                        <value>
+                            <name>Destination</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>
+                            <name>Return Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>
+                            <name>Path Not Found Behavior</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>AODBPrincipalFlightID</key>
+                        <value>
+                            <name>AODBPrincipalFlightID</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>TurnaroundID</key>
+                        <value>
+                            <name>TurnaroundID</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Destination</key>
+                        <value>flowfile-attribute</value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>auto-detect</value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>ignore</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                    <entry>
+                        <key>AODBPrincipalFlightID</key>
+                        <value>$.AODBPrincipalFlightID</value>
+                    </entry>
+                    <entry>
+                        <key>TurnaroundID</key>
+                        <value>$.TurnaroundID</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>EvaluateJsonPath</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
+        </processors>
+        <processors>
+            <id>8e7ee66b-3604-3483-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>1235.0769961787696</x>
+                <y>589.9397619323736</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Log Level</key>
+                        <value>
+                            <name>Log Level</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Log Payload</key>
+                        <value>
+                            <name>Log Payload</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Log</key>
+                        <value>
+                            <name>Attributes to Log</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-log-regex</key>
+                        <value>
+                            <name>attributes-to-log-regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Ignore</key>
+                        <value>
+                            <name>Attributes to Ignore</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-ignore-regex</key>
+                        <value>
+                            <name>attributes-to-ignore-regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Log prefix</key>
+                        <value>
+                            <name>Log prefix</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Log Level</key>
+                        <value>info</value>
+                    </entry>
+                    <entry>
+                        <key>Log Payload</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Log</key>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-log-regex</key>
+                        <value>.*</value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Ignore</key>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-ignore-regex</key>
+                    </entry>
+                    <entry>
+                        <key>Log prefix</key>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>LogAttribute</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.LogAttribute</type>
+        </processors>
+        <processors>
+            <id>8f6ebbc1-8c4c-3960-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>1240.3628093356488</x>
+                <y>219.668701171875</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>
+                            <name>JsonPath Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>$.TurnaroundEvents.*</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>SplitJson</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>split</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.SplitJson</type>
+        </processors>
+        <processors>
+            <id>ad244e96-66de-3414-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>1234.0759585811134</x>
+                <y>405.2697942810064</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>HTTP Method</key>
+                        <value>
+                            <name>HTTP Method</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Remote URL</key>
+                        <value>
+                            <name>Remote URL</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>SSL Context Service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>SSL Context Service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Connection Timeout</key>
+                        <value>
+                            <name>Connection Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Read Timeout</key>
+                        <value>
+                            <name>Read Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Include Date Header</key>
+                        <value>
+                            <name>Include Date Header</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Follow Redirects</key>
+                        <value>
+                            <name>Follow Redirects</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Send</key>
+                        <value>
+                            <name>Attributes to Send</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Basic Authentication Username</key>
+                        <value>
+                            <name>Basic Authentication Username</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Basic Authentication Password</key>
+                        <value>
+                            <name>Basic Authentication Password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                            <name>proxy-configuration-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                        <value>
+                            <name>Proxy Host</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Port</key>
+                        <value>
+                            <name>Proxy Port</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Type</key>
+                        <value>
+                            <name>Proxy Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>invokehttp-proxy-user</key>
+                        <value>
+                            <name>invokehttp-proxy-user</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>invokehttp-proxy-password</key>
+                        <value>
+                            <name>invokehttp-proxy-password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Put Response Body In Attribute</key>
+                        <value>
+                            <name>Put Response Body In Attribute</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Max Length To Put In Attribute</key>
+                        <value>
+                            <name>Max Length To Put In Attribute</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Digest Authentication</key>
+                        <value>
+                            <name>Digest Authentication</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Always Output Response</key>
+                        <value>
+                            <name>Always Output Response</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Trusted Hostname</key>
+                        <value>
+                            <name>Trusted Hostname</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Add Response Headers to Request</key>
+                        <value>
+                            <name>Add Response Headers to Request</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Content-Type</key>
+                        <value>
+                            <name>Content-Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>send-message-body</key>
+                        <value>
+                            <name>send-message-body</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Use Chunked Encoding</key>
+                        <value>
+                            <name>Use Chunked Encoding</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Penalize on "No Retry"</key>
+                        <value>
+                            <name>Penalize on "No Retry"</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>use-etag</key>
+                        <value>
+                            <name>use-etag</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>etag-max-cache-size</key>
+                        <value>
+                            <name>etag-max-cache-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>ignore-response-content</key>
+                        <value>
+                            <name>ignore-response-content</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>HTTP Method</key>
+                        <value>POST</value>
+                    </entry>
+                    <entry>
+                        <key>Remote URL</key>
+                        <value>http://orion:1026/v2/op/update</value>
+                    </entry>
+                    <entry>
+                        <key>SSL Context Service</key>
+                    </entry>
+                    <entry>
+                        <key>Connection Timeout</key>
+                        <value>5 secs</value>
+                    </entry>
+                    <entry>
+                        <key>Read Timeout</key>
+                        <value>15 secs</value>
+                    </entry>
+                    <entry>
+                        <key>Include Date Header</key>
+                        <value>True</value>
+                    </entry>
+                    <entry>
+                        <key>Follow Redirects</key>
+                        <value>True</value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Send</key>
+                    </entry>
+                    <entry>
+                        <key>Basic Authentication Username</key>
+                    </entry>
+                    <entry>
+                        <key>Basic Authentication Password</key>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Port</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Type</key>
+                        <value>http</value>
+                    </entry>
+                    <entry>
+                        <key>invokehttp-proxy-user</key>
+                    </entry>
+                    <entry>
+                        <key>invokehttp-proxy-password</key>
+                    </entry>
+                    <entry>
+                        <key>Put Response Body In Attribute</key>
+                    </entry>
+                    <entry>
+                        <key>Max Length To Put In Attribute</key>
+                        <value>256</value>
+                    </entry>
+                    <entry>
+                        <key>Digest Authentication</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Always Output Response</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Trusted Hostname</key>
+                    </entry>
+                    <entry>
+                        <key>Add Response Headers to Request</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Content-Type</key>
+                        <value>${mime.type}</value>
+                    </entry>
+                    <entry>
+                        <key>send-message-body</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Use Chunked Encoding</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Penalize on "No Retry"</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>use-etag</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>etag-max-cache-size</key>
+                        <value>10MB</value>
+                    </entry>
+                    <entry>
+                        <key>ignore-response-content</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>InvokeHTTP</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>Failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>No Retry</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>Original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>Response</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>Retry</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
+        </processors>
+        <processors>
+            <id>c35d7b8a-71b1-3773-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>1232.0359050387738</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>
+                            <name>JsonPath Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>$.*</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>SplitJson</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>split</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.SplitJson</type>
+        </processors>
+        <processors>
+            <id>c7fb0a05-2eb4-387e-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>635.5178903922224</x>
+                <y>214.14205651617158</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>
+                            <name>Routing Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>result</key>
+                        <value>
+                            <name>result</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>Route to 'match' if all match</value>
+                    </entry>
+                    <entry>
+                        <key>result</key>
+                        <value>${TurnaroundID:isEmpty():not()}</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>RouteOnAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+        </processors>
+        <processors>
+            <id>d09ef172-85fc-3f52-0000-000000000000</id>
+            <parentGroupId>7253be06-e866-3b6c-0000-000000000000</parentGroupId>
+            <position>
+                <x>21.88407951883073</x>
+                <y>1.2843916694546351</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>File Size</key>
+                        <value>
+                            <name>File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>
+                            <name>Data Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>
+                            <name>Unique FlowFiles</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>
+                            <name>generate-ff-custom-text</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>File Size</key>
+                        <value>0B</value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>Text</value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>[
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572341,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1040",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-11-30T14:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572345,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "906",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 46,
+        "ScheduledDateTime": "2020-11-30T16:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584013,
+        "BagsTotal": 10,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "017",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-11-30T18:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Atlantic Airlines (Npt)",
+        "AirlineIATA": "NPT",
+        "AODBPrincipalFlightID": 3660122,
+        "BagsTotal": null,
+        "CAAFlightType": "",
+        "CheckInFrom": "",
+        "CheckInStatus": "C",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "2877",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 0,
+        "ScheduledDateTime": "2020-11-30T19:45:00+00:00",
+        "TurnaroundEvents": null,
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572351,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1044",
+        "FlightRule": "",
+        "FlightStatus": "X",
+        "FlightStatusDesc": "Cancelled",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-11-30T19:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "European Air Transport",
+        "AirlineIATA": "QY",
+        "AODBPrincipalFlightID": 3512310,
+        "BagsTotal": null,
+        "CAAFlightType": "",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "2877",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 0,
+        "ScheduledDateTime": "2020-11-30T19:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571067,
+        "BagsTotal": 21,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "081",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-11-30T20:35:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569221,
+        "BagsTotal": 18,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "030",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-11-30T21:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512322,
+        "BagsTotal": 96,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1451",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-11-30T21:50:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512327,
+        "BagsTotal": 81,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "06",
+        "CheckInStatus": "C",
+        "CheckInTo": "09",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1440",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-12-01T06:00:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc56c6d627dbb33fd9a36bc:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:04:08.000000Z"
+            },
+            {
+                "Id": "5fc56987627dbb33fd9a36b4:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:51:55.000000Z"
+            },
+            {
+                "Id": "5fc56974627dbb33fd9a36b2:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:51:41.000000Z"
+            },
+            {
+                "Id": "5fc56a00627dbb33fd9a36b6:0",
+                "EventType": "connected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:53:50.000000Z"
+            },
+            {
+                "Id": "5fc56ab2627dbb33fd9a36b9:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:56:51.000000Z"
+            },
+            {
+                "Id": "5fc56a78627dbb33fd9a36b7:0",
+                "EventType": "connected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:55:57.000000Z"
+            },
+            {
+                "Id": "5fc56ad1627dbb33fd9a36ba:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:56:29.000000Z"
+            },
+            {
+                "Id": "5fc56a95627dbb33fd9a36b8:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:13:20.000000Z"
+            },
+            {
+                "Id": "5fc56ab2627dbb33fd9a36b9:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:13:54.000000Z"
+            },
+            {
+                "Id": "5fc56c6d627dbb33fd9a36bc:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:12:43.000000Z"
+            },
+            {
+                "Id": "5fc56a78627dbb33fd9a36b7:1",
+                "EventType": "disconnected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:36:07.000000Z"
+            },
+            {
+                "Id": "5fc56bb2627dbb33fd9a36bb:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:02:51.000000Z"
+            },
+            {
+                "Id": "5fc569ad627dbb33fd9a36b5:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:52:15.000000Z"
+            },
+            {
+                "Id": "5fc56a95627dbb33fd9a36b8:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:56:09.000000Z"
+            },
+            {
+                "Id": "5fc56bb2627dbb33fd9a36bb:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:57:58.000000Z"
+            },
+            {
+                "Id": "5fc56ad1627dbb33fd9a36ba:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:03:38.000000Z"
+            },
+            {
+                "Id": "5fc5cf86627dbb33fd9a36c0:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:07:00.000000Z"
+            },
+            {
+                "Id": "5fc5cfcf627dbb33fd9a36c1:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:08:07.000000Z"
+            },
+            {
+                "Id": "5fc5d23f627dbb33fd9a36c2:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:18:30.000000Z"
+            },
+            {
+                "Id": "5fc5d57a627dbb33fd9a36c3:0",
+                "EventType": "connected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:32:22.000000Z"
+            },
+            {
+                "Id": "5fc5d799627dbb33fd9a36c4:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:41:18.000000Z"
+            },
+            {
+                "Id": "5fc569ad627dbb33fd9a36b5:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:41:25.000000Z"
+            },
+            {
+                "Id": "5fc5d957627dbb33fd9a36c5:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:48:53.000000Z"
+            },
+            {
+                "Id": "5fc5cf86627dbb33fd9a36c0:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:50:58.000000Z"
+            },
+            {
+                "Id": "5fc5cfcf627dbb33fd9a36c1:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:50:23.000000Z"
+            },
+            {
+                "Id": "5fc5d9d4627dbb33fd9a36c6:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:51:05.000000Z"
+            },
+            {
+                "Id": "5fc5dab2627dbb33fd9a36c8:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:52:46.000000Z"
+            },
+            {
+                "Id": "5fc5dab2627dbb33fd9a36c8:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:56:41.000000Z"
+            },
+            {
+                "Id": "5fc5d23f627dbb33fd9a36c2:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:59:06.000000Z"
+            },
+            {
+                "Id": "5fc5d9d4627dbb33fd9a36c6:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:58:29.000000Z"
+            },
+            {
+                "Id": "5fc5d57a627dbb33fd9a36c3:1",
+                "EventType": "disconnected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:00:55.000000Z"
+            },
+            {
+                "Id": "5fc5d957627dbb33fd9a36c5:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:01:15.000000Z"
+            },
+            {
+                "Id": "5fc56a00627dbb33fd9a36b6:1",
+                "EventType": "disconnected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:01:41.000000Z"
+            },
+            {
+                "Id": "5fc56987627dbb33fd9a36b4:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:13:04.000000Z"
+            },
+            {
+                "Id": "5fc5d799627dbb33fd9a36c4:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:13:04.000000Z"
+            },
+            {
+                "Id": "5fc56974627dbb33fd9a36b2:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:13:15.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36e9:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:21:50.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36ea:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:21:42.000000Z"
+            },
+            {
+                "Id": "5fc61a4f627dbb33fd9a36eb:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:26:02.000000Z"
+            },
+            {
+                "Id": "5fc61abf627dbb33fd9a36ec:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:27:53.000000Z"
+            },
+            {
+                "Id": "5fc61a4f627dbb33fd9a36eb:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:32:17.000000Z"
+            },
+            {
+                "Id": "5fc61abf627dbb33fd9a36ec:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:48:25.000000Z"
+            },
+            {
+                "Id": "5fc620f9627dbb33fd9a36ed:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:54:01.000000Z"
+            },
+            {
+                "Id": "5fc620f9627dbb33fd9a36ed:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:59:24.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36e9:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T11:02:04.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36ea:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T11:02:13.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc609dcd93f7f341c908db0"
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571068,
+        "BagsTotal": 8,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "12",
+        "CheckInStatus": "C",
+        "CheckInTo": "12",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "070",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T06:50:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "European Air Transport",
+        "AirlineIATA": "QY",
+        "AODBPrincipalFlightID": 3512335,
+        "BagsTotal": null,
+        "CAAFlightType": "",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "2876",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 188,
+        "ScheduledDateTime": "2020-12-01T06:55:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572353,
+        "BagsTotal": 24,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "C",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1035",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T07:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572354,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "C",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "901",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-01T07:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569880,
+        "BagsTotal": 17,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "12",
+        "CheckInStatus": "C",
+        "CheckInTo": "12",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "032",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T07:35:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc5e7c5627dbb33fd9a36cb:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T06:50:29.000000Z"
+            },
+            {
+                "Id": "5fc5e862627dbb33fd9a36cc:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T06:52:58.000000Z"
+            },
+            {
+                "Id": "5fc5e862627dbb33fd9a36cc:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T06:57:25.000000Z"
+            },
+            {
+                "Id": "5fc5e7c5627dbb33fd9a36cb:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:01:05.000000Z"
+            },
+            {
+                "Id": "5fc5ef1d627dbb33fd9a36ce:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:21:53.000000Z"
+            },
+            {
+                "Id": "5fc5ef1d627dbb33fd9a36ce:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:25:57.000000Z"
+            },
+            {
+                "Id": "5fc5f0e0627dbb33fd9a36d0:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:29:22.000000Z"
+            },
+            {
+                "Id": "5fc506c0627dbb33fd9a369f:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:34:16.000000Z"
+            },
+            {
+                "Id": "5fc5f0e0627dbb33fd9a36d0:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:34:16.000000Z"
+            },
+            {
+                "Id": "5fc506ae627dbb33fd9a369e:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:34:33.000000Z"
+            },
+            {
+                "Id": "5fc506c0627dbb33fd9a369f:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-11-30T14:50:24.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc4d4aed93f7f341c908dac"
+    },
+    {
+        "AirlineDescFormatted": "Wideroes Flyveselskap",
+        "AirlineIATA": "WF",
+        "AODBPrincipalFlightID": 3562968,
+        "BagsTotal": 5,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "392",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "I",
+        "MaxPax": 75,
+        "ScheduledDateTime": "2020-12-01T08:05:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Wideroes Flyveselskap",
+        "AirlineIATA": "WF",
+        "AODBPrincipalFlightID": 3562969,
+        "BagsTotal": 8,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "10",
+        "CheckInStatus": "C",
+        "CheckInTo": "11",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "393",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "I",
+        "MaxPax": 75,
+        "ScheduledDateTime": "2020-12-01T08:30:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc5f753627dbb33fd9a36d4:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:56:16.000000Z"
+            },
+            {
+                "Id": "5fc5f764627dbb33fd9a36d5:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:56:59.000000Z"
+            },
+            {
+                "Id": "5fc5f7bf627dbb33fd9a36d6:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:57:39.000000Z"
+            },
+            {
+                "Id": "5fc5f804627dbb33fd9a36d8:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:59:21.000000Z"
+            },
+            {
+                "Id": "5fc5f7f8627dbb33fd9a36d7:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:59:21.000000Z"
+            },
+            {
+                "Id": "5fc5f7f8627dbb33fd9a36d7:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:11:39.000000Z"
+            },
+            {
+                "Id": "5fc5f804627dbb33fd9a36d8:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:11:47.000000Z"
+            },
+            {
+                "Id": "5fc5fb4e627dbb33fd9a36d9:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:13:33.000000Z"
+            },
+            {
+                "Id": "5fc5f764627dbb33fd9a36d5:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:14:53.000000Z"
+            },
+            {
+                "Id": "5fc5f7bf627dbb33fd9a36d6:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:15:36.000000Z"
+            },
+            {
+                "Id": "5fc5f753627dbb33fd9a36d4:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:13:36.000000Z"
+            },
+            {
+                "Id": "5fc5f70f627dbb33fd9a36d2:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:55:48.000000Z"
+            },
+            {
+                "Id": "5fc5f722627dbb33fd9a36d3:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:22:07.000000Z"
+            },
+            {
+                "Id": "5fc5f722627dbb33fd9a36d3:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T07:56:06.000000Z"
+            },
+            {
+                "Id": "5fc5fb4e627dbb33fd9a36d9:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:22:07.000000Z"
+            },
+            {
+                "Id": "5fc5f70f627dbb33fd9a36d2:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T08:22:19.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc374de5bf79250faca9b58"
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3512351,
+        "BagsTotal": 8,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "4611",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "I",
+        "MaxPax": 86,
+        "ScheduledDateTime": "2020-12-01T09:05:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572357,
+        "BagsTotal": 20,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "C",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1037",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T09:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571069,
+        "BagsTotal": 15,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "071",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T09:30:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3581738,
+        "BagsTotal": 19,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "10",
+        "CheckInStatus": "C",
+        "CheckInTo": "11",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "4612",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "I",
+        "MaxPax": 86,
+        "ScheduledDateTime": "2020-12-01T09:40:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc528ff627dbb33fd9a36a3:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:16:39.000000Z"
+            },
+            {
+                "Id": "5fc5290f627dbb33fd9a36a4:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:16:53.000000Z"
+            },
+            {
+                "Id": "5fc52935627dbb33fd9a36a5:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:17:11.000000Z"
+            },
+            {
+                "Id": "5fc52962627dbb33fd9a36a6:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:18:14.000000Z"
+            },
+            {
+                "Id": "5fc529ea627dbb33fd9a36a8:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:20:32.000000Z"
+            },
+            {
+                "Id": "5fc529b5627dbb33fd9a36a7:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:19:25.000000Z"
+            },
+            {
+                "Id": "5fc529b5627dbb33fd9a36a7:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:27:23.000000Z"
+            },
+            {
+                "Id": "5fc529ea627dbb33fd9a36a8:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:34:48.000000Z"
+            },
+            {
+                "Id": "5fc52962627dbb33fd9a36a6:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:45:18.000000Z"
+            },
+            {
+                "Id": "5fc53012627dbb33fd9a36aa:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:46:44.000000Z"
+            },
+            {
+                "Id": "5fc52935627dbb33fd9a36a5:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:45:40.000000Z"
+            },
+            {
+                "Id": "5fc5290f627dbb33fd9a36a4:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:51:01.000000Z"
+            },
+            {
+                "Id": "5fc528ff627dbb33fd9a36a3:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:51:17.000000Z"
+            },
+            {
+                "Id": "5fc53012627dbb33fd9a36aa:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T17:51:01.000000Z"
+            },
+            {
+                "Id": "5fc606c7627dbb33fd9a36db:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:02:51.000000Z"
+            },
+            {
+                "Id": "5fc606d8627dbb33fd9a36dc:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:03:03.000000Z"
+            },
+            {
+                "Id": "5fc606fc627dbb33fd9a36dd:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:03:15.000000Z"
+            },
+            {
+                "Id": "5fc60720627dbb33fd9a36de:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:04:18.000000Z"
+            },
+            {
+                "Id": "5fc60772627dbb33fd9a36df:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:05:37.000000Z"
+            },
+            {
+                "Id": "5fc60904627dbb33fd9a36e1:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:12:09.000000Z"
+            },
+            {
+                "Id": "5fc6098c627dbb33fd9a36e2:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:14:34.000000Z"
+            },
+            {
+                "Id": "5fc6098c627dbb33fd9a36e2:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:18:46.000000Z"
+            },
+            {
+                "Id": "5fc60904627dbb33fd9a36e1:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:22:45.000000Z"
+            },
+            {
+                "Id": "5fc60772627dbb33fd9a36df:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:25:20.000000Z"
+            },
+            {
+                "Id": "5fc60720627dbb33fd9a36de:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:30:17.000000Z"
+            },
+            {
+                "Id": "5fc60d40627dbb33fd9a36e3:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:30:22.000000Z"
+            },
+            {
+                "Id": "5fc606fc627dbb33fd9a36dd:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:30:20.000000Z"
+            },
+            {
+                "Id": "5fc606d8627dbb33fd9a36dc:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:33:01.000000Z"
+            },
+            {
+                "Id": "5fc606c7627dbb33fd9a36db:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:33:13.000000Z"
+            },
+            {
+                "Id": "5fc60d40627dbb33fd9a36e3:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-4",
+                "Timestamp": "2020-12-01T09:33:01.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc5ff9ed93f7f341c908daf"
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569881,
+        "BagsTotal": 7,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "033",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T09:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "British Airways",
+        "AirlineIATA": "BA",
+        "AODBPrincipalFlightID": 3512358,
+        "BagsTotal": 79,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1306",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 143,
+        "ScheduledDateTime": "2020-12-01T09:50:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512361,
+        "BagsTotal": 108,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1443",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-12-01T10:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572361,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "C",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "903",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-01T10:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "British Airways",
+        "AirlineIATA": "BA",
+        "AODBPrincipalFlightID": 3512366,
+        "BagsTotal": 114,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "23",
+        "CheckInStatus": "C",
+        "CheckInTo": "24",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1307",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 143,
+        "ScheduledDateTime": "2020-12-01T10:35:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512367,
+        "BagsTotal": 77,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "07",
+        "CheckInStatus": "C",
+        "CheckInTo": "09",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1444",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-12-01T10:55:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc61a4f627dbb33fd9a36eb:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:26:02.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36ea:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T11:02:13.000000Z"
+            },
+            {
+                "Id": "5fc620f9627dbb33fd9a36ed:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:59:24.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36ea:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:21:42.000000Z"
+            },
+            {
+                "Id": "5fc61abf627dbb33fd9a36ec:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:27:53.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36e9:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:21:50.000000Z"
+            },
+            {
+                "Id": "5fc620f9627dbb33fd9a36ed:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:54:01.000000Z"
+            },
+            {
+                "Id": "5fc61a4f627dbb33fd9a36eb:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:32:17.000000Z"
+            },
+            {
+                "Id": "5fc6194b627dbb33fd9a36e9:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T11:02:04.000000Z"
+            },
+            {
+                "Id": "5fc61abf627dbb33fd9a36ec:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T10:48:25.000000Z"
+            },
+            {
+                "Id": "5fc56987627dbb33fd9a36b4:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:51:55.000000Z"
+            },
+            {
+                "Id": "5fc56974627dbb33fd9a36b2:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:51:41.000000Z"
+            },
+            {
+                "Id": "5fc569ad627dbb33fd9a36b5:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:52:15.000000Z"
+            },
+            {
+                "Id": "5fc56a00627dbb33fd9a36b6:0",
+                "EventType": "connected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:53:50.000000Z"
+            },
+            {
+                "Id": "5fc56a95627dbb33fd9a36b8:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:56:09.000000Z"
+            },
+            {
+                "Id": "5fc56ab2627dbb33fd9a36b9:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:56:51.000000Z"
+            },
+            {
+                "Id": "5fc56a78627dbb33fd9a36b7:0",
+                "EventType": "connected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:55:57.000000Z"
+            },
+            {
+                "Id": "5fc56bb2627dbb33fd9a36bb:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:57:58.000000Z"
+            },
+            {
+                "Id": "5fc56ad1627dbb33fd9a36ba:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T21:56:29.000000Z"
+            },
+            {
+                "Id": "5fc56bb2627dbb33fd9a36bb:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:02:51.000000Z"
+            },
+            {
+                "Id": "5fc56ad1627dbb33fd9a36ba:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:03:38.000000Z"
+            },
+            {
+                "Id": "5fc56c6d627dbb33fd9a36bc:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:04:08.000000Z"
+            },
+            {
+                "Id": "5fc56a95627dbb33fd9a36b8:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:13:20.000000Z"
+            },
+            {
+                "Id": "5fc56ab2627dbb33fd9a36b9:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:13:54.000000Z"
+            },
+            {
+                "Id": "5fc56c6d627dbb33fd9a36bc:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:12:43.000000Z"
+            },
+            {
+                "Id": "5fc56a78627dbb33fd9a36b7:1",
+                "EventType": "disconnected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T22:36:07.000000Z"
+            },
+            {
+                "Id": "5fc5cf86627dbb33fd9a36c0:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:07:00.000000Z"
+            },
+            {
+                "Id": "5fc5cfcf627dbb33fd9a36c1:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:08:07.000000Z"
+            },
+            {
+                "Id": "5fc5d23f627dbb33fd9a36c2:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:18:30.000000Z"
+            },
+            {
+                "Id": "5fc5d57a627dbb33fd9a36c3:0",
+                "EventType": "connected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:32:22.000000Z"
+            },
+            {
+                "Id": "5fc5d799627dbb33fd9a36c4:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:41:18.000000Z"
+            },
+            {
+                "Id": "5fc569ad627dbb33fd9a36b5:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:41:25.000000Z"
+            },
+            {
+                "Id": "5fc5d957627dbb33fd9a36c5:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:48:53.000000Z"
+            },
+            {
+                "Id": "5fc5cf86627dbb33fd9a36c0:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:50:58.000000Z"
+            },
+            {
+                "Id": "5fc5cfcf627dbb33fd9a36c1:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "fwd_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:50:23.000000Z"
+            },
+            {
+                "Id": "5fc5d9d4627dbb33fd9a36c6:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:51:05.000000Z"
+            },
+            {
+                "Id": "5fc5dab2627dbb33fd9a36c8:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:52:46.000000Z"
+            },
+            {
+                "Id": "5fc5dab2627dbb33fd9a36c8:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:56:41.000000Z"
+            },
+            {
+                "Id": "5fc5d23f627dbb33fd9a36c2:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_cargo_door",
+                "ObjectType": "normal",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:59:06.000000Z"
+            },
+            {
+                "Id": "5fc5d9d4627dbb33fd9a36c6:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T05:58:29.000000Z"
+            },
+            {
+                "Id": "5fc5d57a627dbb33fd9a36c3:1",
+                "EventType": "disconnected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "3R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:00:55.000000Z"
+            },
+            {
+                "Id": "5fc5d957627dbb33fd9a36c5:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:01:15.000000Z"
+            },
+            {
+                "Id": "5fc56a00627dbb33fd9a36b6:1",
+                "EventType": "disconnected",
+                "ObjectName": "airstairs",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:01:41.000000Z"
+            },
+            {
+                "Id": "5fc56987627dbb33fd9a36b4:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:13:04.000000Z"
+            },
+            {
+                "Id": "5fc5d799627dbb33fd9a36c4:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:13:04.000000Z"
+            },
+            {
+                "Id": "5fc56974627dbb33fd9a36b2:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-12-01T06:13:15.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc5337bd93f7f341c908dad"
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572362,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1039",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T12:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572359,
+        "BagsTotal": 22,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1036",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T12:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572365,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "904",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-01T13:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572363,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1038",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T14:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572368,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1040",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T14:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571070,
+        "BagsTotal": 17,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "C",
+        "CheckInTo": "13",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "078",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T15:00:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc506c0627dbb33fd9a369f:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-11-30T14:50:24.000000Z"
+            },
+            {
+                "Id": "5fc5e7c5627dbb33fd9a36cb:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T06:50:29.000000Z"
+            },
+            {
+                "Id": "5fc5e862627dbb33fd9a36cc:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T06:52:58.000000Z"
+            },
+            {
+                "Id": "5fc5e862627dbb33fd9a36cc:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T06:57:25.000000Z"
+            },
+            {
+                "Id": "5fc5e7c5627dbb33fd9a36cb:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:01:05.000000Z"
+            },
+            {
+                "Id": "5fc5ef1d627dbb33fd9a36ce:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:21:53.000000Z"
+            },
+            {
+                "Id": "5fc5ef1d627dbb33fd9a36ce:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:25:57.000000Z"
+            },
+            {
+                "Id": "5fc506c0627dbb33fd9a369f:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:34:16.000000Z"
+            },
+            {
+                "Id": "5fc5f0e0627dbb33fd9a36d0:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:34:16.000000Z"
+            },
+            {
+                "Id": "5fc506ae627dbb33fd9a369e:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T07:34:33.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc4d4aed93f7f341c908dac"
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572369,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1041",
+        "FlightRule": "",
+        "FlightStatus": "X",
+        "FlightStatusDesc": "Cancelled",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T15:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584016,
+        "BagsTotal": 19,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "C",
+        "CheckInTo": "13",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "016",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-12-01T15:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Scheduled)",
+        "AirlineIATA": "T3",
+        "AODBPrincipalFlightID": 3584017,
+        "BagsTotal": 22,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "700",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T15:40:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572372,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "906",
+        "FlightRule": "",
+        "FlightStatus": "P",
+        "FlightStatusDesc": "Airborne from preceding airport",
+        "InternationalStatus": "D",
+        "MaxPax": 46,
+        "ScheduledDateTime": "2020-12-01T16:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Scheduled)",
+        "AirlineIATA": "T3",
+        "AODBPrincipalFlightID": 3584018,
+        "BagsTotal": 37,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "11",
+        "CheckInStatus": "C",
+        "CheckInTo": "11",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "701",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T16:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572374,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1043",
+        "FlightRule": "",
+        "FlightStatus": "X",
+        "FlightStatusDesc": "Cancelled",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T17:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3512406,
+        "BagsTotal": 26,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "4615",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "I",
+        "MaxPax": 90,
+        "ScheduledDateTime": "2020-12-01T17:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571071,
+        "BagsTotal": 15,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "079",
+        "FlightRule": "I",
+        "FlightStatus": "A",
+        "FlightStatusDesc": "Arrival is on block at a stand",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T17:35:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569223,
+        "BagsTotal": 11,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "C",
+        "CheckInTo": "13",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "029",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-01T17:40:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572376,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1042",
+        "FlightRule": "",
+        "FlightStatus": "X",
+        "FlightStatusDesc": "Cancelled",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T17:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3512411,
+        "BagsTotal": 7,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "10",
+        "CheckInStatus": "C",
+        "CheckInTo": "10",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "4616",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "I",
+        "MaxPax": 90,
+        "ScheduledDateTime": "2020-12-01T17:55:00+00:00",
+        "TurnaroundEvents": [
+            {
+                "Id": "5fc67eccc7b0d096b418d5d3:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:34:35.000000Z"
+            },
+            {
+                "Id": "5fc67f16c7b0d096b418d5dc:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:36:08.000000Z"
+            },
+            {
+                "Id": "5fc67edbc7b0d096b418d5d6:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:35:11.000000Z"
+            },
+            {
+                "Id": "5fc67efac7b0d096b418d5db:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:35:39.000000Z"
+            },
+            {
+                "Id": "5fc67ebbc7b0d096b418d5d2:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:34:31.000000Z"
+            },
+            {
+                "Id": "5fc67f16c7b0d096b418d5dd:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:36:01.000000Z"
+            },
+            {
+                "Id": "5fc67fbcc7b0d096b418d5e3:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:38:48.000000Z"
+            },
+            {
+                "Id": "5fc67fbcc7b0d096b418d5e3:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:43:09.000000Z"
+            },
+            {
+                "Id": "5fc67efac7b0d096b418d5db:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:48:20.000000Z"
+            },
+            {
+                "Id": "5fc67f16c7b0d096b418d5dc:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:50:42.000000Z"
+            },
+            {
+                "Id": "5fc67f16c7b0d096b418d5dd:1",
+                "EventType": "left_stand",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:50:56.000000Z"
+            },
+            {
+                "Id": "5fc68305c7b0d096b418d610:0",
+                "EventType": "not_clear",
+                "ObjectName": "stand",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:52:40.000000Z"
+            },
+            {
+                "Id": "5fc4b43e627dbb33fd9a3680:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T08:58:25.000000Z"
+            },
+            {
+                "Id": "5fc4b44c627dbb33fd9a3681:0",
+                "EventType": "parked",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T08:58:36.000000Z"
+            },
+            {
+                "Id": "5fc4b46b627dbb33fd9a3682:0",
+                "EventType": "on",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T08:58:59.000000Z"
+            },
+            {
+                "Id": "5fc4b490627dbb33fd9a3683:0",
+                "EventType": "open",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T08:59:46.000000Z"
+            },
+            {
+                "Id": "5fc4b49b627dbb33fd9a3684:0",
+                "EventType": "connected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:00:06.000000Z"
+            },
+            {
+                "Id": "5fc4b4bd627dbb33fd9a3685:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:00:31.000000Z"
+            },
+            {
+                "Id": "5fc4b58e627dbb33fd9a3686:0",
+                "EventType": "connected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:04:02.000000Z"
+            },
+            {
+                "Id": "5fc4b58e627dbb33fd9a3686:1",
+                "EventType": "disconnected",
+                "ObjectName": "fueling",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:09:10.000000Z"
+            },
+            {
+                "Id": "5fc4b49b627dbb33fd9a3684:1",
+                "EventType": "disconnected",
+                "ObjectName": "loader",
+                "ObjectType": "beltloader",
+                "Position": "aft_port",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:10:56.000000Z"
+            },
+            {
+                "Id": "5fc4b7a3627dbb33fd9a3687:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:12:55.000000Z"
+            },
+            {
+                "Id": "5fc4b46b627dbb33fd9a3682:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:12:56.000000Z"
+            },
+            {
+                "Id": "5fc4b4bd627dbb33fd9a3685:1",
+                "EventType": "left_stand",
+                "ObjectName": "fueler",
+                "ObjectType": null,
+                "Position": "starboard",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:15:57.000000Z"
+            },
+            {
+                "Id": "5fc4b490627dbb33fd9a3683:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:26:31.000000Z"
+            },
+            {
+                "Id": "5fc4b44c627dbb33fd9a3681:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:29:06.000000Z"
+            },
+            {
+                "Id": "5fc4b43e627dbb33fd9a3680:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:29:16.000000Z"
+            },
+            {
+                "Id": "5fc4b7a3627dbb33fd9a3687:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-1",
+                "Timestamp": "2020-11-30T09:29:06.000000Z"
+            },
+            {
+                "Id": "5fc68332788c4c03fb73de5d:0",
+                "EventType": "connected",
+                "ObjectName": "gp",
+                "ObjectType": "gpu",
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:53:10.000000Z"
+            },
+            {
+                "Id": "5fc683b3788c4c03fb73de61:0",
+                "EventType": "connected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:55:34.000000Z"
+            },
+            {
+                "Id": "5fc67eccc7b0d096b418d5d3:1",
+                "EventType": "off",
+                "ObjectName": "chocks",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:55:32.000000Z"
+            },
+            {
+                "Id": "5fc67edbc7b0d096b418d5d6:1",
+                "EventType": "closed",
+                "ObjectName": "aircraft_door",
+                "ObjectType": null,
+                "Position": "1R",
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:59:50.000000Z"
+            },
+            {
+                "Id": "5fc67ebbc7b0d096b418d5d2:1",
+                "EventType": "pushback_started",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T18:02:44.000000Z"
+            },
+            {
+                "Id": "5fc683b3788c4c03fb73de61:1",
+                "EventType": "disconnected",
+                "ObjectName": "pushback",
+                "ObjectType": "conventional",
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T18:02:44.000000Z"
+            },
+            {
+                "Id": "5fc67e9cc7b0d096b418d5d1:1",
+                "EventType": "left_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T18:02:57.000000Z"
+            },
+            {
+                "Id": "5fc68305c7b0d096b418d610:1",
+                "EventType": "clear",
+                "ObjectName": "stand",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T18:03:07.000000Z"
+            },
+            {
+                "Id": "5fc67e9cc7b0d096b418d5d1:0",
+                "EventType": "arrived_at_stand",
+                "ObjectName": "aircraft",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T17:34:16.000000Z"
+            },
+            {
+                "Id": "5fc685e3788c4c03fb73de72:0",
+                "EventType": "not_clear",
+                "ObjectName": "stand",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T18:05:18.000000Z"
+            },
+            {
+                "Id": "5fc685e3788c4c03fb73de72:1",
+                "EventType": "clear",
+                "ObjectName": "stand",
+                "ObjectType": null,
+                "Position": null,
+                "StandCode": "abz-2",
+                "Timestamp": "2020-12-01T18:05:34.000000Z"
+            }
+        ],
+        "TurnaroundID": "5fc65cb52852070d9fefeefa"
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569883,
+        "BagsTotal": 9,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "C",
+        "CheckInTo": "13",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "036",
+        "FlightRule": "I",
+        "FlightStatus": "T",
+        "FlightStatusDesc": "Departure is airborne",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T18:10:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584019,
+        "BagsTotal": 20,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "017",
+        "FlightRule": "",
+        "FlightStatus": "Z",
+        "FlightStatusDesc": "Zoned",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-12-01T18:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "European Air Transport",
+        "AirlineIATA": "QY",
+        "AODBPrincipalFlightID": 3512432,
+        "BagsTotal": null,
+        "CAAFlightType": "",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "2877",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 188,
+        "ScheduledDateTime": "2020-12-01T19:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572378,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1044",
+        "FlightRule": "",
+        "FlightStatus": "X",
+        "FlightStatusDesc": "Cancelled",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-01T19:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569884,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "037",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-01T20:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569224,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "030",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-01T21:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512442,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1451",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-12-01T21:50:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512447,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "06",
+        "CheckInStatus": "",
+        "CheckInTo": "09",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1440",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 100,
+        "ScheduledDateTime": "2020-12-02T06:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571072,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "070",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-02T06:50:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "European Air Transport",
+        "AirlineIATA": "QY",
+        "AODBPrincipalFlightID": 3512455,
+        "BagsTotal": null,
+        "CAAFlightType": "",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "2876",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 0,
+        "ScheduledDateTime": "2020-12-02T06:55:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572380,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1035",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T07:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572381,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "901",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 46,
+        "ScheduledDateTime": "2020-12-02T07:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569886,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "032",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T07:35:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Wideroes Flyveselskap",
+        "AirlineIATA": "WF",
+        "AODBPrincipalFlightID": 3562972,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "392",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 78,
+        "ScheduledDateTime": "2020-12-02T08:05:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Wideroes Flyveselskap",
+        "AirlineIATA": "WF",
+        "AODBPrincipalFlightID": 3562973,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "10",
+        "CheckInStatus": "",
+        "CheckInTo": "11",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "393",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 78,
+        "ScheduledDateTime": "2020-12-02T08:30:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Tui (Tom)",
+        "AirlineIATA": "TOM",
+        "AODBPrincipalFlightID": 3583870,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1322",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 189,
+        "ScheduledDateTime": "2020-12-02T09:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3512470,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "4611",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 90,
+        "ScheduledDateTime": "2020-12-02T09:05:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571073,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "071",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-02T09:30:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572384,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1037",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T09:30:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3581739,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "10",
+        "CheckInStatus": "",
+        "CheckInTo": "11",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "4612",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 90,
+        "ScheduledDateTime": "2020-12-02T09:40:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572386,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1036",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T09:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569887,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "033",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T09:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512479,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1443",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-12-02T10:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572388,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "903",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 46,
+        "ScheduledDateTime": "2020-12-02T10:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584699,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "057",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T10:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Klm Royal Dutch Airlines",
+        "AirlineIATA": "KL",
+        "AODBPrincipalFlightID": 3512485,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "06",
+        "CheckInStatus": "",
+        "CheckInTo": "09",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1444",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 98,
+        "ScheduledDateTime": "2020-12-02T10:55:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572389,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1039",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T12:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572390,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1038",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T12:30:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572392,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "904",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 46,
+        "ScheduledDateTime": "2020-12-02T13:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584700,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "058",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T14:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572395,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1040",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T14:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571074,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "078",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T15:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572396,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1041",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T15:00:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584022,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "016",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-12-02T15:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Scheduled)",
+        "AirlineIATA": "T3",
+        "AODBPrincipalFlightID": 3584023,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "700",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-12-02T15:40:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Scheduled)",
+        "AirlineIATA": "T3",
+        "AODBPrincipalFlightID": 3584024,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "03",
+        "CheckInStatus": "",
+        "CheckInTo": "03",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "701",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-12-02T16:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3572400,
+        "BagsTotal": null,
+        "CAAFlightType": "AC",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "906",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 46,
+        "ScheduledDateTime": "2020-12-02T16:40:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572401,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "1043",
+        "FlightRule": "",
+        "FlightStatus": "X",
+        "FlightStatusDesc": "Cancelled",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T17:15:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3512528,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "4615",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 86,
+        "ScheduledDateTime": "2020-12-02T17:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3571075,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "079",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T17:35:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569226,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "029",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 72,
+        "ScheduledDateTime": "2020-12-02T17:40:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Eastern Airways (Charter)",
+        "AirlineIATA": "EZE",
+        "AODBPrincipalFlightID": 3572403,
+        "BagsTotal": null,
+        "CAAFlightType": "AV",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "1042",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 29,
+        "ScheduledDateTime": "2020-12-02T17:45:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Sas",
+        "AirlineIATA": "SK",
+        "AODBPrincipalFlightID": 3512533,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "10",
+        "CheckInStatus": "",
+        "CheckInTo": "11",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "4616",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "I",
+        "MaxPax": 86,
+        "ScheduledDateTime": "2020-12-02T17:55:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3569895,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "13",
+        "CheckInStatus": "",
+        "CheckInTo": "14",
+        "DepartureArrivalType": "D",
+        "FlightNumber": "036",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 34,
+        "ScheduledDateTime": "2020-12-02T18:10:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    },
+    {
+        "AirlineDescFormatted": "Loganair",
+        "AirlineIATA": "LM",
+        "AODBPrincipalFlightID": 3584025,
+        "BagsTotal": null,
+        "CAAFlightType": "AS",
+        "CheckInFrom": "",
+        "CheckInStatus": "",
+        "CheckInTo": "",
+        "DepartureArrivalType": "A",
+        "FlightNumber": "017",
+        "FlightRule": "",
+        "FlightStatus": "S",
+        "FlightStatusDesc": "Flight is on schedule",
+        "InternationalStatus": "D",
+        "MaxPax": 50,
+        "ScheduledDateTime": "2020-12-02T18:20:00+00:00",
+        "TurnaroundEvents": [],
+        "TurnaroundID": null
+    }
+]</value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>20 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GenerateFlowFile-Example-TurnAround</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
+    </snippet>
+    <timestamp>12/08/2020 17:18:51 GMT</timestamp>
+</template>

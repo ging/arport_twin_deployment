@@ -110,7 +110,7 @@ function create_subscriptions {
     "subject": {
         "entities": [{"idPattern": ".*", "type": "Flight"}],
         "condition": {
-        "attrs": [ "aodbPrincipalFlightId", "flightNumber"]
+        "attrs": [ "aodbPrincipalFlightId", "flightNumber", "aibt", "aldt", "aobt", "tobt", "scheduledDateTime"]
         }
     },
     "notification": {
@@ -136,26 +136,6 @@ function create_subscriptions {
     "notification": {
         "http": {
         "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
-        }
-    }
-    }'
-
-        echo 'Subscribe to changes in notification of flight'
-
-    curl -iX POST \
-    --url 'http://localhost:1026/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all Notification changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Notification"}],
-        "condition": {
-        "attrs": [ "date", "message", "status"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://172.17.0.1:3000/subscription/notification-change"
         }
     }
     }'
