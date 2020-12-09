@@ -17,7 +17,7 @@ async function readNotification(entityId, params = {}){
 // general controller for getting Notification
 async function listNotifications(params = {}){
     try {
-        params['options'] = 'keyValues';
+        params['options'] = 'keyValues,count';
         params['type'] = 'Notification';
         return await ngsiV2.listEntities(
             params
@@ -28,10 +28,12 @@ async function listNotifications(params = {}){
 }
 
 // controller for getting Notifications from flight
-async function listNotificationsFromFlight(flightId){
+async function listNotificationsFromFlight(flightId, limit = 100, offset = 0){
     try {
         return await listNotifications({
-            q: `belongsToFlight=='${flightId}'`
+            q: `belongsToFlight=='${flightId}'`,
+            limit,
+            offset
         })
     } catch(error) {
         throw(error);
@@ -40,24 +42,24 @@ async function listNotificationsFromFlight(flightId){
 
 
 // create Notification
-async function createNotification(flightId, message, date = new Date()){
+async function createNotification(flightId, description, date = new Date()){
     try {
         return await ngsiV2.createEntity(
             {
                 "id": `${flightId}:${date.toISOString()}`,
                 "type": "Notification",
-                "sendDateTime": {
+                "dateIssued": {
                     "type": "DateTime",
                     "value": date.toISOString()
                 },
-                "message": {
-                    "value": message
+                "description": {
+                    "value": description
                 },
                 "belongsToFlight": {
                     "value": flightId.toString(),
                     "type": "Relationship"
                 },
-                "status" : {
+                "state" : {
                     "value": "active"
                 }
             },
@@ -68,13 +70,13 @@ async function createNotification(flightId, message, date = new Date()){
     }
 }
 
-// inactive (status inactive) Notification
+// inactive (state inactive) Notification
 async function inactiveNotification(notificationId){
     try {
         return await ngsiV2.updateEntity(
             notificationId,
             {
-                "status" : {
+                "state" : {
                     "value": "inactive"
                 }
             },

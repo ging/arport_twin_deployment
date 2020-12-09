@@ -14,21 +14,10 @@ async function readFlight(entityId, params = {}){
     }
 }
 
-// controller for getting Flight within window time
-async function readFlightByDate(entityId, startDate = new Date(), endDate = new Date()){
-    try {
-        return await readFlight(entityId, {
-            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()}`
-        })
-    } catch(error) {
-        throw(error);
-    }
-}
-
 // general controller for getting Flights
 async function listFlights(params = {}){
     try {
-        params['options'] = 'keyValues';
+        params['options'] = 'keyValues,count';
         params['type'] = 'Flight';
         return await ngsiV2.listEntities(
             params
@@ -39,10 +28,12 @@ async function listFlights(params = {}){
 }
 
 // controller for getting Flights within window time
-async function listFlightsByDate(startDate = new Date(), endDate = new Date()){
+async function listFlightsByDate(startDate = new Date(), endDate = new Date(), limit = 100, offset = 0){
     try {
         return await listFlights({
-            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()}`
+            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()}`,
+            limit,
+            offset
         })
     } catch(error) {
         throw(error);
@@ -51,7 +42,6 @@ async function listFlightsByDate(startDate = new Date(), endDate = new Date()){
 
 module.exports = {
     readFlight,
-    readFlightByDate,
     listFlights,
     listFlightsByDate
 }
