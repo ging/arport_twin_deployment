@@ -4068,8 +4068,8 @@
         "#Number": "entities[0].aodbLinkedFlightId.type"
       },
       "AODBPrincipalFlightID": {
-        "@": "entities[0].AODBPrincipalFlightID.value",
-        "#Number": "entities[0].AODBPrincipalFlightID.type"
+        "@": "entities[0].aodbPrincipalFlightID.value",
+        "#Number": "entities[0].aodbPrincipalFlightID.type"
       },
       "ALDT": {
         "@": "entities[0].aldt.value",
