@@ -149,7 +149,7 @@ parameter="$1"
 case "${parameter}" in
 	"create")
         echo 'Starting containers...'
-        docker-compose up -d
+        docker-compose up -d --build
         wait_for orion
         create_subscriptions
         wait_for draco-1
@@ -157,7 +157,7 @@ case "${parameter}" in
         ;;
     "restart")
 		echo 'Restarting containers...'
-        docker-compose up -d
+        docker-compose up -d --build
         wait_for orion
         wait_for draco-1
         echo 'Ready'
