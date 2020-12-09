@@ -28,7 +28,7 @@ async function listFlights(params = {}){
 }
 
 // controller for getting Flights within window time
-async function listFlightsByDate(startDate = new Date(), endDate = new Date(), limit = 100, offset = 0){
+async function listFlightsByDate(startDate = new Date(), endDate = new Date(), limit = 500, offset = 0){
     try {
         return await listFlights({
             q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()}`,
@@ -40,9 +40,40 @@ async function listFlightsByDate(startDate = new Date(), endDate = new Date(), l
     }
 }
 
+// controller for getting Flights with flight number
+async function listFlightsByFlightNumber(flightNumber, limit = 500, offset = 0){
+    try {
+        return await listFlights({
+            q: `flightNumber=='${flightNumber.toString()}'`,
+            limit,
+            offset
+        })
+    } catch(error) {
+        throw(error);
+    }
+}
+
+// controller for getting Flights with flight number within window time
+async function listFlightsByFlightNumberAndDate(flightNumber, startDate = new Date(), endDate = new Date(), limit = 500, offset = 0){
+    try {
+        return await listFlights({
+            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()};flightNumber=='${flightNumber.toString()}'`,
+            limit,
+            offset
+        })
+    } catch(error) {
+        throw(error);
+    }
+}
+
+
+
+
 module.exports = {
     readFlight,
     listFlights,
-    listFlightsByDate
+    listFlightsByDate,
+    listFlightsByFlightNumber,
+    listFlightsByFlightNumberAndDate
 }
 

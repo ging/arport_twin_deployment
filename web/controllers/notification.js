@@ -28,7 +28,7 @@ async function listNotifications(params = {}){
 }
 
 // controller for getting Notifications from flight
-async function listNotificationsFromFlight(flightId, limit = 100, offset = 0){
+async function listNotificationsFromFlight(flightId, limit = 500, offset = 0){
     try {
         return await listNotifications({
             q: `belongsToFlight=='${flightId}'`,
@@ -42,7 +42,7 @@ async function listNotificationsFromFlight(flightId, limit = 100, offset = 0){
 
 
 // create Notification
-async function createNotification(flightId, description, date = new Date()){
+async function createNotification(flightId, description, date = new Date(), source){
     try {
         return await ngsiV2.createEntity(
             {
@@ -61,7 +61,10 @@ async function createNotification(flightId, description, date = new Date()){
                 },
                 "state" : {
                     "value": "active"
-                }
+                },
+                "source": {
+                    "value": source
+                } 
             },
             ngsiV2.setHeaders()
         )
