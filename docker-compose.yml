@@ -95,6 +95,8 @@ services:
       - "${WEB_CLIENT_PORT}:3000"
     networks:
       - fiware
+    environment:
+      - ORION_URL=http://orion:1026/v2
     healthcheck:
       test: curl --fail -s http://web:3000/status || exit 1
 

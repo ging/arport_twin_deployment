@@ -31,7 +31,7 @@ async function listFlights(params = {}){
 async function listFlightsByDate(startDate = new Date(), endDate = new Date(), limit = 500, offset = 0){
     try {
         return await listFlights({
-            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()}`,
+            q: `dateScheduled==${startDate.toISOString()}..${endDate.toISOString()}`,
             limit,
             offset
         })
@@ -57,7 +57,7 @@ async function listFlightsByFlightNumber(flightNumber, limit = 500, offset = 0){
 async function listFlightsByFlightNumberAndDate(flightNumber, startDate = new Date(), endDate = new Date(), limit = 500, offset = 0){
     try {
         return await listFlights({
-            q: `scheduledDateTime==${startDate.toISOString()}..${endDate.toISOString()};flightNumber=='${flightNumber.toString()}'`,
+            q: `dateScheduled==${startDate.toISOString()}..${endDate.toISOString()};flightNumber=='${flightNumber.toString()}'`,
             limit,
             offset
         })

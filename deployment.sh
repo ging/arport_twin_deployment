@@ -2,147 +2,17 @@
 
 
 source ./scripts/wait_for_healthy.sh
+source ./scripts/create_subscriptions.sh
 
 ORION_HOST=localhost
 ORION_PORT=$(grep ORION_PORT .env | cut -d '=' -f 2-)
 
-WEB_CLIENT_HOST=web
-WEB_CLIENT_PORT=$(grep WEB_CLIENT_PORT .env | cut -d '=' -f 2-)
-
-DRACO_HOST=draco
-DRACO_PORT=$(grep DRACO_PORT .env | cut -d '=' -f 2-)
 
 if (( $# != 1 )); then
     echo "Incorrect number of parameters"
     echo "usage:  ./deployment.sh [create|restart|stop|destroy]"
     exit 1
 fi
-
-
-function create_subscriptions {
-
-    echo 'Subscribe to changes in airport'
-
-    curl -iX POST \
-    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all Airport changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Airport"}],
-        "condition": {
-        "attrs": [ "name", "codeICAO", "codeIATA", "id"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
-        }
-    }
-    }'
-
-    echo 'Subscribe to changes in airline'
-
-    curl -iX POST \
-    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all Airline changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Airline"}],
-        "condition": {
-        "attrs": [ "name", "codeICAO", "codeIATA", "id"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
-        }
-    }
-    }'
-
-    echo 'Subscribe to changes in aircraft location and isOnGround'
-
-    curl -iX POST \
-    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all aircraft changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Aircraft"}],
-        "condition": {
-        "attrs": [ "isOnGround", "location"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://'$WEB_CLIENT_HOST':'$WEB_CLIENT_PORT'/subscription/aircraft-change"
-        },
-        "attrsFormat": "keyValues"
-    }
-    }'
-
-    curl -iX POST \
-    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all aircraft changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Aircraft"}],
-        "condition": {
-        "attrs": [ "isOnGround", "location"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
-        }
-    }
-    }'
-
-    echo 'Subscribe to changes in flight'
-
-    curl -iX POST \
-    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all Notification changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Flight"}],
-        "condition": {
-        "attrs": [ "aodbPrincipalFlightId", "flightNumber", "aibt", "aldt", "aobt", "tobt", "scheduledDateTime"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
-        }
-    }
-    }'
-
-    echo 'Subscribe to changes in noification of flight'
-
-    curl -iX POST \
-    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
-    --header 'content-type: application/json' \
-    --data '{
-    "description": "Notify me of all Notification changes",
-    "subject": {
-        "entities": [{"idPattern": ".*", "type": "Notification"}],
-        "condition": {
-        "attrs": [ "date", "message", "status"]
-        }
-    },
-    "notification": {
-        "http": {
-        "url": "http://'$DRACO_HOST':'$DRACO_PORT'/v2/notify"
-        }
-    }
-    }'
-
-
-}
-
 
 
 parameter="$1"

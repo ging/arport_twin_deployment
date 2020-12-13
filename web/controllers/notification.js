@@ -1,27 +1,33 @@
 const ngsiV2 = require('../lib/ngsi-v2');
 
-// general controller for getting Notification
+// general controller for getting FlightNotification
 async function readNotification(entityId, params = {}){
     try {
         params['options'] = 'keyValues';
-        params['type'] = 'Notification';
-        return await ngsiV2.readEntity(
+        params['type'] = 'FlightNotification';
+        const notificationResponse = await ngsiV2.readEntity(
             entityId,
             params
         );
+        notificationResponse.data = sanetizeNotification(notificationResponse.data)
+        return notificationResponse;
     } catch(error) {
         throw(error);
     }
 }
 
-// general controller for getting Notification
+// general controller for getting FlightNotification
 async function listNotifications(params = {}){
     try {
         params['options'] = 'keyValues,count';
-        params['type'] = 'Notification';
-        return await ngsiV2.listEntities(
+        params['type'] = 'FlightNotification';
+        const notificationsResponse = await ngsiV2.listEntities(
             params
         );
+        notificationsResponse.data.map(notification => {
+            return (sanetizeNotification(notification));
+        })
+        return notificationsResponse;
     } catch(error) {
         throw(error);
     }
@@ -30,30 +36,34 @@ async function listNotifications(params = {}){
 // controller for getting Notifications from flight
 async function listNotificationsFromFlight(flightId, limit = 500, offset = 0){
     try {
-        return await listNotifications({
+        const notificationsResponse = await listNotifications({
             q: `belongsToFlight=='${flightId}'`,
             limit,
             offset
         })
+        notificationsResponse.data.map(notification => {
+            return (sanetizeNotification(notification));
+        })
+        return notificationsResponse;
     } catch(error) {
         throw(error);
     }
 }
 
 
-// create Notification
+// create FlightNotification
 async function createNotification(flightId, description, date = new Date(), source){
     try {
         return await ngsiV2.createEntity(
             {
                 "id": `${flightId}:${date.toISOString()}`,
-                "type": "Notification",
+                "type": "FlightNotification",
                 "dateIssued": {
                     "type": "DateTime",
                     "value": date.toISOString()
                 },
                 "description": {
-                    "value": description
+                    "value": escape(description)
                 },
                 "belongsToFlight": {
                     "value": flightId.toString(),
@@ -63,7 +73,7 @@ async function createNotification(flightId, description, date = new Date(), sour
                     "value": "active"
                 },
                 "source": {
-                    "value": source
+                    "value": escape(source)
                 } 
             },
             ngsiV2.setHeaders()
@@ -73,7 +83,7 @@ async function createNotification(flightId, description, date = new Date(), sour
     }
 }
 
-// inactive (state inactive) Notification
+// inactive (state inactive) FlightNotification
 async function inactiveNotification(notificationId){
     try {
         return await ngsiV2.updateEntity(
@@ -88,6 +98,12 @@ async function inactiveNotification(notificationId){
     } catch(error) {
         console.error(error);
     }
+}
+
+function sanetizeNotification(notification){
+    notification.source = unescape(notification.source);
+    notification.description = unescape(notification.description);
+    return notification;
 }
 
 module.exports= {

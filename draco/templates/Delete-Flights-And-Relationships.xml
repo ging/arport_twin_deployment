@@ -2051,7 +2051,7 @@
                     </entry>
                     <entry>
                         <key>Remote URL</key>
-                        <value>http://orion:1026/v2/entities?type=Flight&amp;q=scheduledDateTime&lt;${now():toNumber():minus(172800000):format("yyyy-MM-dd'T'HH:mm:ss'Z'", "GMT")}&amp;options=keyValues,count&amp;attrs=id,type&amp;limit=50</value>
+                        <value>http://orion:1026/v2/entities?type=Flight&amp;q=dateScheduled&lt;${now():toNumber():minus(172800000):format("yyyy-MM-dd'T'HH:mm:ss'Z'", "GMT")}&amp;options=keyValues,count&amp;attrs=id,type&amp;limit=50</value>
                     </entry>
                     <entry>
                         <key>SSL Context Service</key>
