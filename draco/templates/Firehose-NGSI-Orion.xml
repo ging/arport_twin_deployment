@@ -1,92 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.2">
     <description>This template gets the flights from the TCP/TLS connection from Firehose, filters the incoming data, transform them to NGSIV2 entities, and sends them to Orion.</description>
-    <groupId>512676a7-0176-1000-7ef6-f539b5d455a1</groupId>
+    <groupId>625a0e2f-0176-1000-8f65-b797826121a6</groupId>
     <name>Firehose-NGSI-Orion</name>
     <snippet>
         <connections>
-            <id>3820d6e1-9319-3c02-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>02c92c47-4f81-3946-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>83bedb65-0951-3c75-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>d4726e45-f741-3517-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>6cba36da-1a58-3866-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>4b011ddc-e191-3786-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>83bedb65-0951-3c75-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>77ceb8f5-651f-3b6a-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>d4726e45-f741-3517-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>4dbdce40-0123-343b-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>a53e577f-a524-3530-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>4dbdce40-0123-343b-0000-000000000000</id>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>8229217f-2867-3c84-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -98,20 +23,220 @@
             <name></name>
             <selectedRelationships>matched</selectedRelationships>
             <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>8ffaf1d9-788b-3020-0000-000000000000</id>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>bf72503a-9b36-3d2c-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>aa83abb5-6795-3326-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>11e3d0f2-b974-3af6-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>3491457b-6f75-3bb1-0000-000000000000</id>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4978bb15-fd3a-3992-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>01b8ecb6-f34d-3c3a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4cbfb7be-a6b8-3bf8-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>01b8ecb6-f34d-3c3a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>9598bfc8-5480-38cb-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>70ecca8e-f8fe-3025-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>9598bfc8-5480-38cb-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>8229217f-2867-3c84-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>863ed129-9627-3ca4-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4480b96b-81c0-3cf3-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>split</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>19264760-a4cf-3c91-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>92f397ae-85eb-3fe1-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>19264760-a4cf-3c91-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4c5bbfb7-137d-318a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>b440d9cb-9e8c-3388-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>bf72503a-9b36-3d2c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4480b96b-81c0-3cf3-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>ba1cbf3d-de16-3af4-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4c5bbfb7-137d-318a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>Success</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>938a54ab-3dd3-37a3-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>ba872bf7-b138-3f2d-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>fbf1d5b4-ee93-39e4-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <source>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4c5bbfb7-137d-318a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>f070ff7b-5d91-3b36-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>be8f5cb9-6a85-37f2-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -124,143 +249,18 @@
             <selectedRelationships>No Retry</selectedRelationships>
             <selectedRelationships>Retry</selectedRelationships>
             <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>4b011ddc-e191-3786-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>c47124d7-5b9c-3368-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>8ffaf1d9-788b-3020-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>matched</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>4974eca2-5230-313b-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>db534ea2-a0e6-3734-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>4974eca2-5230-313b-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>split</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>c94c6384-c45b-32ff-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>de824937-275c-3ad8-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>6d3778f8-f148-34b8-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>Success</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>68b9978d-51dc-3092-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>eb3a3923-d507-3240-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>c94c6384-c45b-32ff-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>6d3778f8-f148-34b8-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>f9c0e3ea-a67e-3d67-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>b98f6bb7-5191-3c0a-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>failure</selectedRelationships>
-            <source>
-                <groupId>11dccc01-c612-3e04-0000-000000000000</groupId>
-                <id>6d3778f8-f148-34b8-0000-000000000000</id>
+                <groupId>a559e9a4-914f-3632-0000-000000000000</groupId>
+                <id>4978bb15-fd3a-3992-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <processors>
-            <id>3491457b-6f75-3bb1-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>01b8ecb6-f34d-3c3a-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
-                <x>1249.6246643066413</x>
-                <y>569.4758796051688</y>
+                <x>11.568787297379913</x>
+                <y>586.6459867447495</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -269,55 +269,43 @@
             </bundle>
             <config>
                 <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
+                <comments>Sanetize NGSIv2 entity json</comments>
                 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                 <descriptors>
                     <entry>
-                        <key>Log Level</key>
+                        <key>Regular Expression</key>
                         <value>
-                            <name>Log Level</name>
+                            <name>Regular Expression</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Log Payload</key>
+                        <key>Replacement Value</key>
                         <value>
-                            <name>Log Payload</name>
+                            <name>Replacement Value</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Attributes to Log</key>
+                        <key>Character Set</key>
                         <value>
-                            <name>Attributes to Log</name>
+                            <name>Character Set</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>attributes-to-log-regex</key>
+                        <key>Maximum Buffer Size</key>
                         <value>
-                            <name>attributes-to-log-regex</name>
+                            <name>Maximum Buffer Size</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Attributes to Ignore</key>
+                        <key>Replacement Strategy</key>
                         <value>
-                            <name>Attributes to Ignore</name>
+                            <name>Replacement Strategy</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>attributes-to-ignore-regex</key>
+                        <key>Evaluation Mode</key>
                         <value>
-                            <name>attributes-to-ignore-regex</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Log prefix</key>
-                        <value>
-                            <name>Log prefix</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>character-set</key>
-                        <value>
-                            <name>character-set</name>
+                            <name>Evaluation Mode</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -326,32 +314,28 @@
                 <penaltyDuration>30 sec</penaltyDuration>
                 <properties>
                     <entry>
-                        <key>Log Level</key>
-                        <value>info</value>
+                        <key>Regular Expression</key>
+                        <value>[(*)]</value>
                     </entry>
                     <entry>
-                        <key>Log Payload</key>
-                        <value>false</value>
+                        <key>Replacement Value</key>
+                        <value>-</value>
                     </entry>
                     <entry>
-                        <key>Attributes to Log</key>
-                    </entry>
-                    <entry>
-                        <key>attributes-to-log-regex</key>
-                        <value>.*</value>
-                    </entry>
-                    <entry>
-                        <key>Attributes to Ignore</key>
-                    </entry>
-                    <entry>
-                        <key>attributes-to-ignore-regex</key>
-                    </entry>
-                    <entry>
-                        <key>Log prefix</key>
-                    </entry>
-                    <entry>
-                        <key>character-set</key>
+                        <key>Character Set</key>
                         <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Buffer Size</key>
+                        <value>1 MB</value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Strategy</key>
+                        <value>Regex Replace</value>
+                    </entry>
+                    <entry>
+                        <key>Evaluation Mode</key>
+                        <value>Line-by-Line</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -360,18 +344,88 @@
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
-            <name>LogAttribute</name>
+            <name>ReplaceText_Sanetize</name>
             <relationships>
                 <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
                 <name>success</name>
             </relationships>
             <state>STOPPED</state>
             <style/>
-            <type>org.apache.nifi.processors.standard.LogAttribute</type>
+            <type>org.apache.nifi.processors.standard.ReplaceText</type>
         </processors>
         <processors>
-            <id>4974eca2-5230-313b-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>19264760-a4cf-3c91-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>192.1867560700125</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments>Segregate all incoming aircrafts</comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>
+                            <name>JsonPath Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>$.*</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>SplitJson</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>split</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.SplitJson</type>
+        </processors>
+        <processors>
+            <id>4480b96b-81c0-3cf3-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
                 <x>606.9986538198025</x>
                 <y>189.54000236352476</y>
@@ -417,6 +471,12 @@
                         </value>
                     </entry>
                     <entry>
+                        <key>pos_update_time</key>
+                        <value>
+                            <name>pos_update_time</name>
+                        </value>
+                    </entry>
+                    <entry>
                         <key>reg</key>
                         <value>
                             <name>reg</name>
@@ -454,6 +514,10 @@
                         <value>$.flight_number</value>
                     </entry>
                     <entry>
+                        <key>pos_update_time</key>
+                        <value>$.pos_update_time</value>
+                    </entry>
+                    <entry>
                         <key>reg</key>
                         <value>$.reg</value>
                     </entry>
@@ -486,11 +550,11 @@
             <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
         </processors>
         <processors>
-            <id>4b011ddc-e191-3786-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>4978bb15-fd3a-3992-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
                 <x>611.4599914550786</x>
-                <y>592.1344489411063</y>
+                <y>592.134448941106</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -821,11 +885,93 @@
             <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
         </processors>
         <processors>
-            <id>4dbdce40-0123-343b-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>4c5bbfb7-137d-318a-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
+            <position>
+                <x>607.5647372117505</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments>Decompress received gzip</comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Mode</key>
+                        <value>
+                            <name>Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Compression Format</key>
+                        <value>
+                            <name>Compression Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Compression Level</key>
+                        <value>
+                            <name>Compression Level</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Update Filename</key>
+                        <value>
+                            <name>Update Filename</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Mode</key>
+                        <value>decompress</value>
+                    </entry>
+                    <entry>
+                        <key>Compression Format</key>
+                        <value>gzip</value>
+                    </entry>
+                    <entry>
+                        <key>Compression Level</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Update Filename</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>CompressContent_Decompress</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.CompressContent</type>
+        </processors>
+        <processors>
+            <id>8229217f-2867-3c84-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
                 <x>615.6332702636719</x>
-                <y>400.5312384918875</y>
+                <y>400.5312384918873</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -868,6 +1014,12 @@
                         </value>
                     </entry>
                     <entry>
+                        <key>pos_update_time</key>
+                        <value>
+                            <name>pos_update_time</name>
+                        </value>
+                    </entry>
+                    <entry>
                         <key>reg</key>
                         <value>
                             <name>reg</name>
@@ -897,6 +1049,10 @@
                         <value>${flightNumber:replaceAll('^(([A-Za-z]{2,3})|([A-Za-z]\d)|(\d[A-Za-z]))(\d{1,})([A-Za-z]?)', '$5$6')}</value>
                     </entry>
                     <entry>
+                        <key>pos_update_time</key>
+                        <value>${pos_update_time:multiply(1000):format("yyyy-MM-dd'T'HH:mm:ss'Z'", "GMT")}</value>
+                    </entry>
+                    <entry>
                         <key>reg</key>
                         <value>${reg:replaceAll('[- ]', '')}</value>
                     </entry>
@@ -917,8 +1073,8 @@
             <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
         </processors>
         <processors>
-            <id>68b9978d-51dc-3092-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>938a54ab-3dd3-37a3-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
                 <x>2.6963290086255256</x>
                 <y>4.252568147772308</y>
@@ -1049,11 +1205,11 @@
             <type>org.apache.nifi.processors.tcp.client.TCPClient</type>
         </processors>
         <processors>
-            <id>6d3778f8-f148-34b8-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>9598bfc8-5480-38cb-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
-                <x>607.5647372117505</x>
-                <y>0.0</y>
+                <x>1250.2060241699219</x>
+                <y>393.14091866766853</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1062,31 +1218,43 @@
             </bundle>
             <config>
                 <bulletinLevel>WARN</bulletinLevel>
-                <comments>Decompress received gzip</comments>
+                <comments>Build aircraft entity with NGSIv2 format</comments>
                 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                 <descriptors>
                     <entry>
-                        <key>Mode</key>
+                        <key>jolt-transform</key>
                         <value>
-                            <name>Mode</name>
+                            <name>jolt-transform</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Compression Format</key>
+                        <key>jolt-custom-class</key>
                         <value>
-                            <name>Compression Format</name>
+                            <name>jolt-custom-class</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Compression Level</key>
+                        <key>jolt-custom-modules</key>
                         <value>
-                            <name>Compression Level</name>
+                            <name>jolt-custom-modules</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Update Filename</key>
+                        <key>jolt-spec</key>
                         <value>
-                            <name>Update Filename</name>
+                            <name>jolt-spec</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Transform Cache Size</key>
+                        <value>
+                            <name>Transform Cache Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>pretty_print</key>
+                        <value>
+                            <name>pretty_print</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -1095,19 +1263,96 @@
                 <penaltyDuration>30 sec</penaltyDuration>
                 <properties>
                     <entry>
-                        <key>Mode</key>
-                        <value>decompress</value>
+                        <key>jolt-transform</key>
+                        <value>jolt-transform-chain</value>
                     </entry>
                     <entry>
-                        <key>Compression Format</key>
-                        <value>gzip</value>
+                        <key>jolt-custom-class</key>
                     </entry>
                     <entry>
-                        <key>Compression Level</key>
+                        <key>jolt-custom-modules</key>
+                    </entry>
+                    <entry>
+                        <key>jolt-spec</key>
+                        <value>[
+    {
+        "operation": "modify-overwrite-beta",
+        "spec": {
+            "speed": "=divideAndRound(6, @(1,speed),0.539957)",
+            "altitude": "=divideAndRound(6, @(1,altitude), 3.28084)",
+          	"vert_rate": "=divideAndRound(6, @(1,vert_rate), 196.85)"
+        }
+    },
+    {
+        "operation": "shift",
+        "spec": {
+            "#append": "actionType",
+            "#Aircraft": "entities[0].type",
+            "speed": {
+                "@": "entities[0].speed.value",
+                "#Number": "entities[0].speed.type"
+            },
+            "reg": {
+                "@": "entities[0].registration.value",
+                "#Text": "entities[0].registration.type"
+            },
+            "is_on_ground": {
+                "@": "entities[0].isOnGround.value",
+                "#Boolean": "entities[0].isOnGround.type"
+            },
+            "vert_rate": {
+                "@": "entities[0].verticalSpeed.value",
+                "#Number": "entities[0].verticalSpeed.type"
+            },
+            "heading": {
+                "@": "entities[0].heading.value",
+                "#Number": "entities[0].heading.type"
+            },
+            "flight_number": {
+                "@": "entities[0].flightNumberIATA.value",
+                "#Text": "entities[0].flightNumberIATA.type"
+            },
+            "adshex": {
+                "@": "entities[0].adshex.value",
+                "#Text": "entities[0].adshex.type"
+            },
+            "#location": {
+                "#geo:json": "entities[0].location.type",
+                "#value": {
+                    "#Point": "entities[0].location.&amp;1.type",
+                    "lat": "entities[0].location.&amp;1.coordinates",
+                    "lon": "entities[0].location.&amp;1.coordinates",
+                    "altitude": "entities[0].location.&amp;1.coordinates"
+                }
+            }
+        }
+    },
+    {
+        "operation": "modify-overwrite-beta",
+        "spec": {
+            "entities": {
+                "*": {
+                    "id": "${reg}",
+                    "flightNumber": {
+                        "value": "${flightNumber}",
+                        "type": "Text"
+                    },
+                    "dateIssued": {
+                        "value": "${pos_update_time}",
+                        "type": "DateTime"
+                    }
+                }
+            }
+        }
+    }
+]</value>
+                    </entry>
+                    <entry>
+                        <key>Transform Cache Size</key>
                         <value>1</value>
                     </entry>
                     <entry>
-                        <key>Update Filename</key>
+                        <key>pretty_print</key>
                         <value>false</value>
                     </entry>
                 </properties>
@@ -1117,109 +1362,7 @@
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
-            <name>CompressContent_Decompress</name>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>failure</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>success</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.standard.CompressContent</type>
-        </processors>
-        <processors>
-            <id>83bedb65-0951-3c75-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <position>
-                <x>11.568787297379856</x>
-                <y>586.6459867447493</y>
-            </position>
-            <bundle>
-                <artifact>nifi-standard-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.9.2</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments>Sanetize NGSIv2 entity json</comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>Regular Expression</key>
-                        <value>
-                            <name>Regular Expression</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Replacement Value</key>
-                        <value>
-                            <name>Replacement Value</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Character Set</key>
-                        <value>
-                            <name>Character Set</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Maximum Buffer Size</key>
-                        <value>
-                            <name>Maximum Buffer Size</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Replacement Strategy</key>
-                        <value>
-                            <name>Replacement Strategy</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Evaluation Mode</key>
-                        <value>
-                            <name>Evaluation Mode</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>Regular Expression</key>
-                        <value>[(*)]</value>
-                    </entry>
-                    <entry>
-                        <key>Replacement Value</key>
-                        <value>-</value>
-                    </entry>
-                    <entry>
-                        <key>Character Set</key>
-                        <value>UTF-8</value>
-                    </entry>
-                    <entry>
-                        <key>Maximum Buffer Size</key>
-                        <value>1 MB</value>
-                    </entry>
-                    <entry>
-                        <key>Replacement Strategy</key>
-                        <value>Regex Replace</value>
-                    </entry>
-                    <entry>
-                        <key>Evaluation Mode</key>
-                        <value>Line-by-Line</value>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>ReplaceText_Sanetize</name>
+            <name>JoltTransformJSON_To_NGSIv2</name>
             <relationships>
                 <autoTerminate>true</autoTerminate>
                 <name>failure</name>
@@ -1230,86 +1373,14 @@
             </relationships>
             <state>STOPPED</state>
             <style/>
-            <type>org.apache.nifi.processors.standard.ReplaceText</type>
+            <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
         </processors>
         <processors>
-            <id>8ffaf1d9-788b-3020-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>be8f5cb9-6a85-37f2-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
-                <x>13.128631591796875</x>
-                <y>406.70665353095</y>
-            </position>
-            <bundle>
-                <artifact>nifi-standard-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.9.2</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments>Filter all the aircrafts whose flights departs from or arrives to Aberdeen Airport and whose "flightNumber" is not null</comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>Routing Strategy</key>
-                        <value>
-                            <name>Routing Strategy</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>result</key>
-                        <value>
-                            <name>result</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>result2</key>
-                        <value>
-                            <name>result2</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>Routing Strategy</key>
-                        <value>Route to 'match' if all match</value>
-                    </entry>
-                    <entry>
-                        <key>result</key>
-                        <value>${flightNumber:isEmpty():not():and(${route:isEmpty():not()}):and(${reg:isEmpty():not()})}</value>
-                    </entry>
-                    <entry>
-                        <key>result2</key>
-                        <value>${route:toUpper():contains('ABZ-'):or(${route:toUpper():contains('-ABZ')})}</value>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>RouteOnAttribute</name>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>matched</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>unmatched</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
-        </processors>
-        <processors>
-            <id>b98f6bb7-5191-3c0a-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
-            <position>
-                <x>1242.7291425312399</x>
-                <y>7.064453125</y>
+                <x>1249.624664306641</x>
+                <y>569.4758796051685</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1419,11 +1490,11 @@
             <type>org.apache.nifi.processors.standard.LogAttribute</type>
         </processors>
         <processors>
-            <id>c94c6384-c45b-32ff-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>bf72503a-9b36-3d2c-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
-                <x>0.0</x>
-                <y>192.1867560700125</y>
+                <x>13.128631591796875</x>
+                <y>406.7066535309498</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1432,19 +1503,31 @@
             </bundle>
             <config>
                 <bulletinLevel>WARN</bulletinLevel>
-                <comments>Segregate all incoming aircrafts</comments>
+                <comments>Filter all the aircrafts whose flights departs from or arrives to Aberdeen Airport and whose "flightNumber" is not null</comments>
                 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                 <descriptors>
                     <entry>
-                        <key>JsonPath Expression</key>
+                        <key>Routing Strategy</key>
                         <value>
-                            <name>JsonPath Expression</name>
+                            <name>Routing Strategy</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Null Value Representation</key>
+                        <key>result</key>
                         <value>
-                            <name>Null Value Representation</name>
+                            <name>result</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>result2</key>
+                        <value>
+                            <name>result2</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>result3</key>
+                        <value>
+                            <name>result3</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -1453,12 +1536,20 @@
                 <penaltyDuration>30 sec</penaltyDuration>
                 <properties>
                     <entry>
-                        <key>JsonPath Expression</key>
-                        <value>$.*</value>
+                        <key>Routing Strategy</key>
+                        <value>Route to 'match' if all match</value>
                     </entry>
                     <entry>
-                        <key>Null Value Representation</key>
-                        <value>empty string</value>
+                        <key>result</key>
+                        <value>${flightNumber:isEmpty():not():and(${route:isEmpty():not()}):and(${reg:isEmpty():not()})}</value>
+                    </entry>
+                    <entry>
+                        <key>result2</key>
+                        <value>${route:toUpper():contains('ABZ-'):or(${route:toUpper():contains('-ABZ')})}</value>
+                    </entry>
+                    <entry>
+                        <key>result3</key>
+                        <value>${pos_update_time:isEmpty():not()}</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -1467,29 +1558,25 @@
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
-            <name>SplitJson</name>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>failure</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>original</name>
-            </relationships>
+            <name>RouteOnAttribute</name>
             <relationships>
                 <autoTerminate>false</autoTerminate>
-                <name>split</name>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
             </relationships>
             <state>STOPPED</state>
             <style/>
-            <type>org.apache.nifi.processors.standard.SplitJson</type>
+            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
         </processors>
         <processors>
-            <id>d4726e45-f741-3517-0000-000000000000</id>
-            <parentGroupId>11dccc01-c612-3e04-0000-000000000000</parentGroupId>
+            <id>fbf1d5b4-ee93-39e4-0000-000000000000</id>
+            <parentGroupId>a559e9a4-914f-3632-0000-000000000000</parentGroupId>
             <position>
-                <x>1250.2060241699219</x>
-                <y>395.81987374579376</y>
+                <x>1242.7291425312396</x>
+                <y>7.064453125</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1498,43 +1585,55 @@
             </bundle>
             <config>
                 <bulletinLevel>WARN</bulletinLevel>
-                <comments>Build aircraft entity with NGSIv2 format</comments>
+                <comments></comments>
                 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                 <descriptors>
                     <entry>
-                        <key>jolt-transform</key>
+                        <key>Log Level</key>
                         <value>
-                            <name>jolt-transform</name>
+                            <name>Log Level</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>jolt-custom-class</key>
+                        <key>Log Payload</key>
                         <value>
-                            <name>jolt-custom-class</name>
+                            <name>Log Payload</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>jolt-custom-modules</key>
+                        <key>Attributes to Log</key>
                         <value>
-                            <name>jolt-custom-modules</name>
+                            <name>Attributes to Log</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>jolt-spec</key>
+                        <key>attributes-to-log-regex</key>
                         <value>
-                            <name>jolt-spec</name>
+                            <name>attributes-to-log-regex</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Transform Cache Size</key>
+                        <key>Attributes to Ignore</key>
                         <value>
-                            <name>Transform Cache Size</name>
+                            <name>Attributes to Ignore</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>pretty_print</key>
+                        <key>attributes-to-ignore-regex</key>
                         <value>
-                            <name>pretty_print</name>
+                            <name>attributes-to-ignore-regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Log prefix</key>
+                        <value>
+                            <name>Log prefix</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -1543,96 +1642,32 @@
                 <penaltyDuration>30 sec</penaltyDuration>
                 <properties>
                     <entry>
-                        <key>jolt-transform</key>
-                        <value>jolt-transform-chain</value>
+                        <key>Log Level</key>
+                        <value>info</value>
                     </entry>
                     <entry>
-                        <key>jolt-custom-class</key>
-                    </entry>
-                    <entry>
-                        <key>jolt-custom-modules</key>
-                    </entry>
-                    <entry>
-                        <key>jolt-spec</key>
-                        <value>[
-    {
-        "operation": "modify-overwrite-beta",
-        "spec": {
-            "speed": "=divideAndRound(6, @(1,speed),0.539957)",
-            "altitude": "=divideAndRound(6, @(1,altitude), 3.28084)"
-        }
-    },
-    {
-        "operation": "shift",
-        "spec": {
-            "#append": "actionType",
-            "#Aircraft": "entities[0].type",
-            "speed": {
-                "@": "entities[0].speed.value",
-                "#Number": "entities[0].speed.type"
-            },
-            "reg": {
-                "@": "entities[0].registration.value",
-                "#Text": "entities[0].registration.type"
-            },
-            "is_on_ground": {
-                "@": "entities[0].isOnGround.value",
-                "#Boolean": "entities[0].isOnGround.type"
-            },
-            "pos_update_time": {
-                "@": "entities[0].posUpdateTime.value",
-                "#Number": "entities[0].posUpdateTime.type"
-            },
-            "vert_rate": {
-                "@": "entities[0].vertRate.value",
-                "#Number": "entities[0].vertRate.type"
-            },
-            "heading": {
-                "@": "entities[0].heading.value",
-                "#Number": "entities[0].heading.type"
-            },
-            "flight_number": {
-                "@": "entities[0].flight_number.value",
-                "#Text": "entities[0].flight_number.type"
-            },
-            "adshex": {
-                "@": "entities[0].adshex.value",
-                "#Text": "entities[0].adshex.type"
-            },
-            "#location": {
-                "#geo:json": "entities[0].location.type",
-                "#value": {
-                    "#Point": "entities[0].location.&amp;1.type",
-                    "lat": "entities[0].location.&amp;1.coordinates",
-                    "lon": "entities[0].location.&amp;1.coordinates",
-                    "altitude": "entities[0].location.&amp;1.coordinates"
-                }
-            }
-        }
-    },
-    {
-        "operation": "modify-overwrite-beta",
-        "spec": {
-            "entities": {
-                "*": {
-                    "id": "${reg}",
-                    "flight": {
-                        "value": "${flightNumber}",
-                        "type": "Relationship"
-                    }
-                }
-            }
-        }
-    }
-]</value>
-                    </entry>
-                    <entry>
-                        <key>Transform Cache Size</key>
-                        <value>1</value>
-                    </entry>
-                    <entry>
-                        <key>pretty_print</key>
+                        <key>Log Payload</key>
                         <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Log</key>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-log-regex</key>
+                        <value>.*</value>
+                    </entry>
+                    <entry>
+                        <key>Attributes to Ignore</key>
+                    </entry>
+                    <entry>
+                        <key>attributes-to-ignore-regex</key>
+                    </entry>
+                    <entry>
+                        <key>Log prefix</key>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -1641,19 +1676,15 @@
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
-            <name>JoltTransformJSON_To_NGSIv2</name>
+            <name>LogAttribute</name>
             <relationships>
                 <autoTerminate>true</autoTerminate>
-                <name>failure</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
                 <name>success</name>
             </relationships>
             <state>STOPPED</state>
             <style/>
-            <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
+            <type>org.apache.nifi.processors.standard.LogAttribute</type>
         </processors>
     </snippet>
-    <timestamp>12/11/2020 13:36:04 GMT</timestamp>
+    <timestamp>12/14/2020 17:50:42 GMT</timestamp>
 </template>

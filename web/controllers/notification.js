@@ -52,7 +52,7 @@ async function listNotificationsFromFlight(flightId, limit = 500, offset = 0){
 
 
 // create FlightNotification
-async function createNotification(flightId, description, date = new Date(), source){
+async function createNotification(flightId, description, date = new Date(), dataProvider){
     try {
         return await ngsiV2.createEntity(
             {
@@ -72,8 +72,8 @@ async function createNotification(flightId, description, date = new Date(), sour
                 "state" : {
                     "value": "active"
                 },
-                "source": {
-                    "value": escape(source)
+                "dataProvider": {
+                    "value": escape(dataProvider)
                 } 
             },
             ngsiV2.setHeaders()
@@ -101,7 +101,7 @@ async function inactiveNotification(notificationId){
 }
 
 function sanetizeNotification(notification){
-    notification.source = unescape(notification.source);
+    notification.dataProvider = unescape(notification.dataProvider);
     notification.description = unescape(notification.description);
     return notification;
 }
