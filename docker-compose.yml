@@ -107,4 +107,4 @@ networks:
   fiware:
     ipam:
       config:
-        - subnet: 172.18.1.0/24
+        - subnet: 172.12.2.0/24
