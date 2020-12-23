@@ -100,7 +100,7 @@ function create_subscriptions {
     }
     }'
 
-    echo 'Subscribe to changes in noification of flight'
+    echo 'Subscribe to changes in notification of flight'
 
     curl -iX POST \
     --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
@@ -111,6 +111,26 @@ function create_subscriptions {
         "entities": [{"idPattern": ".*", "type": "FlightNotification"}],
         "condition": {
         "attrs": [ "dateIssued", "description", "state"]
+        }
+    },
+    "notification": {
+        "http": {
+        "url": "http://draco:5050/v2/notify"
+        }
+    }
+    }'
+
+    echo 'Subscribe to changes turn aroun event of flight'
+
+    curl -iX POST \
+    --url 'http://'$ORION_HOST':'$ORION_PORT'/v2/subscriptions' \
+    --header 'content-type: application/json' \
+    --data '{
+    "description": "Notify me of all TurnAroundEvent changes",
+    "subject": {
+        "entities": [{"idPattern": ".*", "type": "TurnAroundEvent"}],
+        "condition": {
+        "attrs": [ "dateIssued", "id", "eventType"]
         }
     },
     "notification": {

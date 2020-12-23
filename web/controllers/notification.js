@@ -1,7 +1,8 @@
 const ngsiV2 = require('../lib/ngsi-v2');
 
 // general controller for getting FlightNotification
-async function readNotification(entityId, params = {}){
+//returns HTTP response with a single notification object
+async function readNotification(entityId, params = {}) {
     try {
         params['options'] = 'keyValues';
         params['type'] = 'FlightNotification';
@@ -11,16 +12,19 @@ async function readNotification(entityId, params = {}){
         );
         notificationResponse.data = sanetizeNotification(notificationResponse.data)
         return notificationResponse;
-    } catch(error) {
-        throw(error);
+    } catch (error) {
+        throw (error);
     }
 }
 
 // general controller for getting FlightNotification
-async function listNotifications(params = {}){
+//returns HTTP response with an array of notifications
+async function listNotifications(params = {}, limit = 500, offset = 0) {
     try {
         params['options'] = 'keyValues,count';
         params['type'] = 'FlightNotification';
+        params['limit'] = limit;
+        params['offset'] = offset;
         const notificationsResponse = await ngsiV2.listEntities(
             params
         );
@@ -28,31 +32,31 @@ async function listNotifications(params = {}){
             return (sanetizeNotification(notification));
         })
         return notificationsResponse;
-    } catch(error) {
-        throw(error);
+    } catch (error) {
+        throw (error);
     }
 }
 
 // controller for getting Notifications from flight
-async function listNotificationsFromFlight(flightId, limit = 500, offset = 0){
+//returns HTTP response with an array of notifications
+async function listNotificationsFromFlight(flightId, limit = 500, offset = 0) {
     try {
         const notificationsResponse = await listNotifications({
-            q: `belongsToFlight=='${flightId}'`,
-            limit,
-            offset
-        })
+            q: `belongsToFlight=='${flightId}'`
+        }, limit, offset)
         notificationsResponse.data.map(notification => {
             return (sanetizeNotification(notification));
         })
         return notificationsResponse;
-    } catch(error) {
-        throw(error);
+    } catch (error) {
+        throw (error);
     }
 }
 
 
 // create FlightNotification
-async function createNotification(flightId, description, date = new Date(), dataProvider){
+// returns HTTP response
+async function createNotification(flightId, description, date = new Date(), dataProvider) {
     try {
         return await ngsiV2.createEntity(
             {
@@ -69,44 +73,45 @@ async function createNotification(flightId, description, date = new Date(), data
                     "value": flightId.toString(),
                     "type": "Relationship"
                 },
-                "state" : {
+                "state": {
                     "value": "active"
                 },
                 "dataProvider": {
                     "value": escape(dataProvider)
-                } 
+                }
             },
             ngsiV2.setHeaders()
         )
-    } catch(error) {
+    } catch (error) {
         console.error(error);
     }
 }
 
 // inactive (state inactive) FlightNotification
-async function inactiveNotification(notificationId){
+// returns HTTP response
+async function inactiveNotification(notificationId) {
     try {
         return await ngsiV2.updateEntity(
             notificationId,
             {
-                "state" : {
+                "state": {
                     "value": "inactive"
                 }
             },
             ngsiV2.setHeaders()
         )
-    } catch(error) {
+    } catch (error) {
         console.error(error);
     }
 }
 
-function sanetizeNotification(notification){
+function sanetizeNotification(notification) {
     notification.dataProvider = unescape(notification.dataProvider);
     notification.description = unescape(notification.description);
     return notification;
 }
 
-module.exports= {
+module.exports = {
     readNotification,
     listNotifications,
     listNotificationsFromFlight,

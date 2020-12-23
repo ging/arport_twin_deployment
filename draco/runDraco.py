@@ -111,53 +111,70 @@ if __name__ == "__main__":
                          }
                       }
 
-    json_invoke_properties={
+    json_invoke_properties_chroma={
                          "properties":{
                             "password":os.environ['CHROMA_REMOTE_PASSWORD'],
                             "token":os.environ['CHROMA_TOKEN'],
                             "username":os.environ['CHROMA_REMOTE_USERNAME']
                          }
                       }
-    json_invoke_properties_flight=copy.deepcopy(json_invoke_properties)
-    json_invoke_properties_flight["properties"]["Remote URL"] = os.environ['CHROMA_REMOTE_URL_FLIGHT']
+    json_invoke_properties_chroma_flight=copy.deepcopy(json_invoke_properties_chroma)
+    json_invoke_properties_chroma_flight["properties"]["Remote URL"] = os.environ['CHROMA_REMOTE_URL_FLIGHT']
     
-    json_invoke_properties_airport=copy.deepcopy(json_invoke_properties)
-    json_invoke_properties_airport["properties"]["Remote URL"] = os.environ['CHROMA_REMOTE_URL_AIRPORT']
+    json_invoke_properties_chroma_airport=copy.deepcopy(json_invoke_properties_chroma)
+    json_invoke_properties_chroma_airport["properties"]["Remote URL"] = os.environ['CHROMA_REMOTE_URL_AIRPORT']
 
-    json_invoke_properties_airline=copy.deepcopy(json_invoke_properties)
-    json_invoke_properties_airline["properties"]["Remote URL"] = os.environ['CHROMA_REMOTE_URL_AIRLINE']
+    json_invoke_properties_chroma_airline=copy.deepcopy(json_invoke_properties_chroma)
+    json_invoke_properties_chroma_airline["properties"]["Remote URL"] = os.environ['CHROMA_REMOTE_URL_AIRLINE']
 
+
+    json_invoke_properties_assaia={
+                         "properties":{
+                            "password":os.environ['ASSAIA_REMOTE_PASSWORD'],
+                            "token":os.environ['ASSAIA_TOKEN'],
+                            "username":os.environ['ASSAIA_REMOTE_USERNAME']
+                         }        
+    }
+
+    json_invoke_properties_assaia_flight_turn_around=copy.deepcopy(json_invoke_properties_assaia)
+    json_invoke_properties_assaia_flight_turn_around["properties"]["Remote URL"] = os.environ['ASSAIA_REMOTE_URL_FLIGHT_TURN_AROUND']
                             
 
-    print("Initializing Orion Connection to MongoDB ... ")
+    print("Setting up Orion Connection to MongoDB ... ")
     template_info=init.get_template_info(draco_endpoint,'ORION-TO-MONGO-2')
     group_id=template_info[0]
     init.put_template(draco_endpoint,group_id,template_info[1],5.0,900.0)
     processors_id=init.get_processors_id(draco_endpoint,group_id)
     init.update_procesor(draco_endpoint,processors_id, 'NGSIToMongo',json_mongo_properties)
-    init.run_processors(draco_endpoint,processors_id )
     
-    print("Initializing Firehose Connection... ")
+    print("Setting up Firehose Connection... ")
     template_info=init.get_template_info(draco_endpoint,'Firehose-NGSI-Orion')
     group_id=template_info[0]
     init.put_template(draco_endpoint,group_id,template_info[1],5.0,0.0)
     processors_id=init.get_processors_id(draco_endpoint,group_id)
-    init.update_procesor(draco_endpoint,processors_id, 'TCPClient',json_tcp_properties)
-    init.run_processors(draco_endpoint,processors_id ) 
+    init.update_procesor(draco_endpoint,processors_id, 'TCPClient',json_tcp_properties) 
     
-    print("Initializing Chroma Connection... ")
+    print("Setting up Chroma Connection... ")
     template_info=init.get_template_info(draco_endpoint,'Chroma-NGSI-Orion')
     group_id=template_info[0]
     init.put_template(draco_endpoint,group_id,template_info[1],3000.0,0.0)
     processors_id=init.get_processors_id(draco_endpoint,group_id)
-    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Flight',json_invoke_properties_flight)
-    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Airport',json_invoke_properties_airport)
-    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Airline',json_invoke_properties_airline)
-    init.run_processors(draco_endpoint,processors_id ) 
+    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Flight',json_invoke_properties_chroma_flight)
+    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Airport',json_invoke_properties_chroma_airport)
+    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Airline',json_invoke_properties_chroma_airline)
+
+    print("Setting up Asasia/Chroma Connection... ")
+    template_info=init.get_template_info(draco_endpoint,'Assaia-NGSI-Orion')
+    group_id=template_info[0]
+    init.put_template(draco_endpoint,group_id,template_info[1],6000.0,1000.0)
+    processors_id=init.get_processors_id(draco_endpoint,group_id)
+    init.update_procesor(draco_endpoint,processors_id, 'InvokeHTTP-Input-Flight-Turn-Around',json_invoke_properties_assaia_flight_turn_around)
     
-    print("Initializing  Delete Flights... ")
+    print("Setting up Delete Flights... ")
     template_info=init.get_template_info(draco_endpoint,'Delete-Flights-And-Relationships')
     group_id=template_info[0]
     init.put_template(draco_endpoint,group_id,template_info[1],6000.0,0.0)
     processors_id=init.get_processors_id(draco_endpoint,group_id)
+    
+    print ("Starting templates")
     init.run_processors(draco_endpoint,processors_id ) 

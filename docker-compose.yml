@@ -22,14 +22,12 @@ services:
   orion:
     image: fiware/orion:${ORION_VERSION}
     container_name: orion
-    command: -dbhost mongo -dbuser root -dbpwd example #-logLevel DEBUG
+    entrypoint: bash -c "rm /tmp/contextBroker.pid; /usr/bin/contextBroker -fg -multiservice -ngsiv1Autocast -dbhost mongo -dbuser root -dbpwd example"
     restart: always
     depends_on:
       - mongo
     ports:
       - "${ORION_PORT}:1026"
-    links:
-      - mongo
     networks:
       - fiware
     healthcheck:
@@ -39,13 +37,17 @@ services:
     image: ging/python-flask
     container_name: script-draco
     environment:
-      - DRACO_ENDPOINT=draco:${DRACO_WEB_PORT}
+      - "DRACO_ENDPOINT=draco:${DRACO_WEB_PORT}"
       - "CHROMA_REMOTE_URL_FLIGHT=${CHROMA_REMOTE_URL_FLIGHT}"
       - "CHROMA_REMOTE_URL_AIRPORT=${CHROMA_REMOTE_URL_AIRPORT}"
       - "CHROMA_REMOTE_URL_AIRLINE=${CHROMA_REMOTE_URL_AIRLINE}"
       - "CHROMA_REMOTE_USERNAME=${CHROMA_REMOTE_USERNAME}"
       - "CHROMA_REMOTE_PASSWORD=${CHROMA_REMOTE_PASSWORD}"
       - "CHROMA_TOKEN=${CHROMA_TOKEN}"
+      - "ASSAIA_REMOTE_URL_FLIGHT_TURN_AROUND=${ASSAIA_REMOTE_URL_FLIGHT_TURN_AROUND}"
+      - "ASSAIA_REMOTE_USERNAME=${ASSAIA_REMOTE_USERNAME}"
+      - "ASSAIA_REMOTE_PASSWORD=${ASSAIA_REMOTE_PASSWORD}"
+      - "ASSAIA_TOKEN=${ASSAIA_TOKEN}"
       - "FIREHOSE_HOSTNAME=${FIREHOSE_HOSTNAME}"
       - "FIREHOSE_PORT=${FIREHOSE_PORT}"
       - "FIREHOSE_CREDENTIALS=${FIREHOSE_CREDENTIALS}"
@@ -57,7 +59,7 @@ services:
      timeout: 10s
      retries: 3
      start_period: 120s
-    command: bash -c "/resources/wait_for_draco.sh ${DRACO_WEB_PORT}  && python3 /resources/runDraco.py"
+    command: bash -c "python3 /resources/wait_for_draco.py ${DRACO_WEB_PORT} && python3 /resources/runDraco.py"
     volumes:
        - ./draco:/resources
     networks:
@@ -107,4 +109,4 @@ networks:
   fiware:
     ipam:
       config:
-        - subnet: 172.12.2.0/24
+        - subnet: 172.18.1.0/24
